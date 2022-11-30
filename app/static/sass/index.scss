@@ -1,0 +1,275 @@
+@import '__default.scss';
+main {
+
+    .first-section {
+        background-image: url(/static/media/images/tide_index.jpg);
+        background-size: cover;
+        height: 655px;
+        background-position: top;
+
+        .images {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 9.8%;
+
+            .waves {
+                width: 80px;
+            }
+
+            .title {
+                line-height: 120px;
+            }
+
+            .up {
+                font-size: 120px;
+                font-weight: 900;
+                color: white;
+                text-align: center;
+            }
+
+            .down {
+                font-size: 160px;
+                font-weight: 900;
+                color: transparent;
+                -webkit-text-stroke: 1px white;
+                text-align: center;
+            }
+        }
+    }
+
+    .second-section {
+        background-image: url(/static/media/images/lines_index.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 780px;
+
+        .zen-container {
+            padding: 60px 20px;
+            display: flex;
+            justify-content: center;
+
+           .image-wrapper {
+                height: 297px;
+                width: 1256px;
+                background-image: url(/static/media/images/zen_index.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                box-shadow: 0.5px 0.5px 6px black;
+                border-radius: 41px;
+                display: flex;
+                justify-content: space-around;
+
+                .letters-container {
+                    width: 500px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+               
+
+                    .first {
+                        font-weight: 700;
+                        font-size: 45px;
+                        color: white;
+                    }
+
+                    span {
+                        color: $first-black
+                    }
+
+                    .second {
+                        font-size: 22px;
+                        font-weight: 700;
+                        color: $first-white;
+                    }
+                }
+                
+                .second {
+                    width: 630px;
+
+                }
+                
+
+                .button-container {
+                    display: flex;
+                    align-items: center;
+                    width: 210px;
+                    justify-content: center;
+
+                    a {
+                        width: 100%;
+                        text-align: center;
+                        background-color: $first-white;
+                        padding: 14px;
+                        color: $orange;
+                        border-radius: 30px;
+                        font-size: 22px;
+                        font-weight: 700;
+                        letter-spacing: 1.4px;
+                    }
+
+                    a:hover {
+                        box-shadow: 0.5px 0.5px 6px black;
+                    }
+
+                    a:active {
+                        background-color: #ccc;
+                    }
+                }   
+            }
+
+            .sand-background {
+                background-image: url("/static/media/images/second_zen_background.png");
+            }
+        }
+
+        .recuerdos-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 0px 1px 3px black;
+            height: 307px;
+
+            .first {
+                font-size: 40px;
+                font-weight: 700;
+                color: $orange;
+            }
+
+            .second {
+                font-size: 90px;
+                font-weight: 700;
+                color: $orange;
+            }
+        }
+    }
+
+    .photos-section {
+        display: flex;
+        flex-direction: column;
+
+        div {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        img {
+            max-width: 295px;
+            height: 295px;
+            box-shadow: 0.5px 0.5px 6px black;
+        }
+
+    }
+
+    .third-section {
+        height: 600px;
+        background-image: url(/static/media/images/lines_right_index.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        display: flex;
+        justify-content: center;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            max-width: 709px;
+            padding-top: 50px;
+        }
+
+        img {
+            width: 80px;
+        }
+
+        h1 {
+            font-size: 60px;
+            font-weight: 700;
+            margin: 33px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        span {
+            color: $orange;
+        }
+    }
+
+    .fourth-section {
+        height: 856px;
+        color: $first-white;
+        background-color: $orange;
+
+        .first {
+            text-align: center;
+            padding-top: 100px;
+
+            h1 {
+                font-size: 60px;
+                font-weight: 700;
+            }
+        }
+
+        .second {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                max-width: 350px;
+                height: 490px;
+                text-align: center;
+                justify-content: space-around;
+
+                h1 {
+                    font-size: 180px;
+                }
+
+                h2 {
+                    font-size: 40px;
+                    font-weight: 700;
+                }
+
+                p {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+    .fifth-section {
+        display: flex;
+        justify-content: space-around;
+
+        div {
+            max-width: 406px;
+            margin-top: 50px;
+
+            h1 {
+                font-size: 60px;
+                font-weight: 700;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 500;
+                margin-top: 26px;
+                
+                span {
+                    color: $orange;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,154 @@
+@import "__default.scss";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: $second-white;
+    font-family: 'Roboto', sans-serif;
+}
+
+::selection {
+    backgound: $orange;
+}
+
+header {
+
+    .info {
+        display: flex;
+        background-color: $first-black;
+        color: $second-white;
+        justify-content: space-between;
+        font-size: 14px;
+        
+        .contact-header {
+
+            img {
+                margin-right: 4px;
+            }
+        }
+
+        ul {
+            margin: 0 85px;
+            display: flex;
+
+            li {
+                margin: 7px 12px;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .icons-media {
+                margin-right: 110px;
+
+        }
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $first-white;
+        box-shadow: 0.5px 0.5px 6px black;
+        position: sticky;
+
+        div {
+            margin: 12px 100px;
+
+            img {
+                max-width: 160px;
+            }
+
+            .anchor-logo {
+               margin: 0px;
+            } 
+
+            .anchor-logo:hover {
+                border-bottom: none;
+            }
+
+            a {
+                font-size: 18px;
+                font-weight: 500;
+                margin: 22px;
+            }
+
+            a:hover {
+                border-bottom: 2px solid $orange;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $orange;
+    padding: 0px 170px;
+    color: $first-white;
+
+    .first-footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 80px 0px;
+
+        .logo-footer {
+            max-width: 302px;
+        }
+
+        .footer-links {
+            line-height: 24px;
+
+            a:hover {
+                border-bottom: 2px solid $first-black;
+            }
+
+            a:active {
+                color: $first-black;
+            }
+
+            p {
+                margin-bottom: 12px;
+            }
+
+            .contact-footer {
+                align-items: center;
+                display: flex;
+                margin-bottom: 4px;
+
+                img {
+                    margin-right: 4px;
+                }
+            }
+        }
+
+        img {
+            max-width: 302px;
+        }
+    }
+
+    .last-footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+    }
+    
+    hr {
+        background-color: $first-white;
+    }
+}
+

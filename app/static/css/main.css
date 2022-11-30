@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 16px; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+body {
+  background-color: #E5E5E5;
+  font-family: 'Roboto', sans-serif; }
+
+::selection {
+  backgound: #FF6B22; }
+
+header .info {
+  display: flex;
+  background-color: #1E1E1E;
+  color: #E5E5E5;
+  justify-content: space-between;
+  font-size: 14px; }
+  header .info .contact-header img {
+    margin-right: 4px; }
+  header .info ul {
+    margin: 0 85px;
+    display: flex; }
+    header .info ul li {
+      margin: 7px 12px;
+      display: flex;
+      align-items: center; }
+  header .info .icons-media {
+    margin-right: 110px; }
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFEFE;
+  box-shadow: 0.5px 0.5px 6px black;
+  position: sticky; }
+  header nav div {
+    margin: 12px 100px; }
+    header nav div img {
+      max-width: 160px; }
+    header nav div .anchor-logo {
+      margin: 0px; }
+    header nav div .anchor-logo:hover {
+      border-bottom: none; }
+    header nav div a {
+      font-size: 18px;
+      font-weight: 500;
+      margin: 22px; }
+    header nav div a:hover {
+      border-bottom: 2px solid #FF6B22; }
+
+footer {
+  background-color: #FF6B22;
+  padding: 0px 170px;
+  color: #FFFEFE; }
+  footer .first-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0px; }
+    footer .first-footer .logo-footer {
+      max-width: 302px; }
+    footer .first-footer .footer-links {
+      line-height: 24px; }
+      footer .first-footer .footer-links a:hover {
+        border-bottom: 2px solid #1E1E1E; }
+      footer .first-footer .footer-links a:active {
+        color: #1E1E1E; }
+      footer .first-footer .footer-links p {
+        margin-bottom: 12px; }
+      footer .first-footer .footer-links .contact-footer {
+        align-items: center;
+        display: flex;
+        margin-bottom: 4px; }
+        footer .first-footer .footer-links .contact-footer img {
+          margin-right: 4px; }
+    footer .first-footer img {
+      max-width: 302px; }
+  footer .last-footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px; }
+  footer hr {
+    background-color: #FFFEFE; }
+
+/*# sourceMappingURL=main.css.map */
