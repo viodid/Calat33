@@ -66,8 +66,6 @@ main {
                     flex-direction: column;
                     justify-content: center;
 
-               
-
                     .first {
                         font-weight: 700;
                         font-size: 45px;
@@ -84,12 +82,11 @@ main {
                         color: $first-white;
                     }
                 }
-                
+
                 .second {
                     width: 630px;
 
                 }
-                
 
                 .button-container {
                     display: flex;
@@ -129,7 +126,7 @@ main {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            text-shadow: 0px 1px 3px black;
+            /* text-shadow: 0px 1px 3px black; */
             height: 307px;
 
             .first {
@@ -160,7 +157,7 @@ main {
         img {
             max-width: 295px;
             height: 295px;
-            box-shadow: 0.5px 0.5px 6px black;
+            /* box-shadow: 0.5px 0.5px 6px black; */
         }
 
     }
@@ -265,7 +262,7 @@ main {
                 font-size: 18px;
                 font-weight: 500;
                 margin-top: 26px;
-                
+
                 span {
                     color: $orange;
                 }

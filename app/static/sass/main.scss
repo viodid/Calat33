@@ -25,7 +25,8 @@ body {
 }
 
 ::selection {
-    backgound: $orange;
+    background: $orange;
+    color: $first-white;
 }
 
 header {
@@ -36,7 +37,7 @@ header {
         color: $second-white;
         justify-content: space-between;
         font-size: 14px;
-        
+
         .contact-header {
 
             img {
@@ -90,7 +91,12 @@ header {
             }
 
             a:hover {
-                border-bottom: 2px solid $orange;
+                color: $orange;
+                /* border-bottom: 2px solid $orange; */
+            }
+
+            a:active {
+                color: $orange;
             }
         }
     }
@@ -114,7 +120,8 @@ footer {
             line-height: 24px;
 
             a:hover {
-                border-bottom: 2px solid $first-black;
+                /* border-bottom: 2px solid $first-white; */
+                color: $first-black;
             }
 
             a:active {
@@ -145,8 +152,9 @@ footer {
         text-align: center;
         padding: 20px;
         font-size: 14px;
+        border-top: 1px solid $first-white;
     }
-    
+
     hr {
         background-color: $first-white;
     }

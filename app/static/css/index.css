@@ -2,180 +2,224 @@ main .first-section {
   background-image: url(/static/media/images/tide_index.jpg);
   background-size: cover;
   height: 655px;
-  background-position: top; }
-  main .first-section .images {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 9.8%; }
-    main .first-section .images .waves {
-      width: 80px; }
-    main .first-section .images .title {
-      line-height: 120px; }
-    main .first-section .images .up {
-      font-size: 120px;
-      font-weight: 900;
-      color: white;
-      text-align: center; }
-    main .first-section .images .down {
-      font-size: 160px;
-      font-weight: 900;
-      color: transparent;
-      -webkit-text-stroke: 1px white;
-      text-align: center; }
+  background-position: top;
+}
+main .first-section .images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 9.8%;
+}
+main .first-section .images .waves {
+  width: 80px;
+}
+main .first-section .images .title {
+  line-height: 120px;
+}
+main .first-section .images .up {
+  font-size: 120px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+}
+main .first-section .images .down {
+  font-size: 160px;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  text-align: center;
+}
 main .second-section {
   background-image: url(/static/media/images/lines_index.png);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 780px; }
-  main .second-section .zen-container {
-    padding: 60px 20px;
-    display: flex;
-    justify-content: center; }
-    main .second-section .zen-container .image-wrapper {
-      height: 297px;
-      width: 1256px;
-      background-image: url(/static/media/images/zen_index.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      box-shadow: 0.5px 0.5px 6px black;
-      border-radius: 41px;
-      display: flex;
-      justify-content: space-around; }
-      main .second-section .zen-container .image-wrapper .letters-container {
-        width: 500px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center; }
-        main .second-section .zen-container .image-wrapper .letters-container .first {
-          font-weight: 700;
-          font-size: 45px;
-          color: white; }
-        main .second-section .zen-container .image-wrapper .letters-container span {
-          color: #1E1E1E; }
-        main .second-section .zen-container .image-wrapper .letters-container .second {
-          font-size: 22px;
-          font-weight: 700;
-          color: #FFFEFE; }
-      main .second-section .zen-container .image-wrapper .second {
-        width: 630px; }
-      main .second-section .zen-container .image-wrapper .button-container {
-        display: flex;
-        align-items: center;
-        width: 210px;
-        justify-content: center; }
-        main .second-section .zen-container .image-wrapper .button-container a {
-          width: 100%;
-          text-align: center;
-          background-color: #FFFEFE;
-          padding: 14px;
-          color: #FF6B22;
-          border-radius: 30px;
-          font-size: 22px;
-          font-weight: 700;
-          letter-spacing: 1.4px; }
-        main .second-section .zen-container .image-wrapper .button-container a:hover {
-          box-shadow: 0.5px 0.5px 6px black; }
-        main .second-section .zen-container .image-wrapper .button-container a:active {
-          background-color: #ccc; }
-    main .second-section .zen-container .sand-background {
-      background-image: url("/static/media/images/second_zen_background.png"); }
-  main .second-section .recuerdos-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 0px 1px 3px black;
-    height: 307px; }
-    main .second-section .recuerdos-container .first {
-      font-size: 40px;
-      font-weight: 700;
-      color: #FF6B22; }
-    main .second-section .recuerdos-container .second {
-      font-size: 90px;
-      font-weight: 700;
-      color: #FF6B22; }
+  height: 780px;
+}
+main .second-section .zen-container {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+main .second-section .zen-container .image-wrapper {
+  height: 297px;
+  width: 1256px;
+  background-image: url(/static/media/images/zen_index.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0.5px 0.5px 6px black;
+  border-radius: 41px;
+  display: flex;
+  justify-content: space-around;
+}
+main .second-section .zen-container .image-wrapper .letters-container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .second-section .zen-container .image-wrapper .letters-container .first {
+  font-weight: 700;
+  font-size: 45px;
+  color: white;
+}
+main .second-section .zen-container .image-wrapper .letters-container span {
+  color: #1E1E1E;
+}
+main .second-section .zen-container .image-wrapper .letters-container .second {
+  font-size: 22px;
+  font-weight: 700;
+  color: #FFFEFE;
+}
+main .second-section .zen-container .image-wrapper .second {
+  width: 630px;
+}
+main .second-section .zen-container .image-wrapper .button-container {
+  display: flex;
+  align-items: center;
+  width: 210px;
+  justify-content: center;
+}
+main .second-section .zen-container .image-wrapper .button-container a {
+  width: 100%;
+  text-align: center;
+  background-color: #FFFEFE;
+  padding: 14px;
+  color: #FF6B22;
+  border-radius: 30px;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+main .second-section .zen-container .image-wrapper .button-container a:hover {
+  box-shadow: 0.5px 0.5px 6px black;
+}
+main .second-section .zen-container .image-wrapper .button-container a:active {
+  background-color: #ccc;
+}
+main .second-section .zen-container .sand-background {
+  background-image: url("/static/media/images/second_zen_background.png");
+}
+main .second-section .recuerdos-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* text-shadow: 0px 1px 3px black; */
+  height: 307px;
+}
+main .second-section .recuerdos-container .first {
+  font-size: 40px;
+  font-weight: 700;
+  color: #FF6B22;
+}
+main .second-section .recuerdos-container .second {
+  font-size: 90px;
+  font-weight: 700;
+  color: #FF6B22;
+}
 main .photos-section {
   display: flex;
-  flex-direction: column; }
-  main .photos-section div {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 30px; }
-  main .photos-section img {
-    max-width: 295px;
-    height: 295px;
-    box-shadow: 0.5px 0.5px 6px black; }
+  flex-direction: column;
+}
+main .photos-section div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+}
+main .photos-section img {
+  max-width: 295px;
+  height: 295px;
+  /* box-shadow: 0.5px 0.5px 6px black; */
+}
 main .third-section {
   height: 600px;
   background-image: url(/static/media/images/lines_right_index.png);
   background-repeat: no-repeat;
   background-position: right;
   display: flex;
-  justify-content: center; }
-  main .third-section div {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    max-width: 709px;
-    padding-top: 50px; }
-  main .third-section img {
-    width: 80px; }
-  main .third-section h1 {
-    font-size: 60px;
-    font-weight: 700;
-    margin: 33px; }
-  main .third-section p {
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 30px; }
-  main .third-section span {
-    color: #FF6B22; }
+  justify-content: center;
+}
+main .third-section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 709px;
+  padding-top: 50px;
+}
+main .third-section img {
+  width: 80px;
+}
+main .third-section h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 33px;
+}
+main .third-section p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+main .third-section span {
+  color: #FF6B22;
+}
 main .fourth-section {
   height: 856px;
   color: #FFFEFE;
-  background-color: #FF6B22; }
-  main .fourth-section .first {
-    text-align: center;
-    padding-top: 100px; }
-    main .fourth-section .first h1 {
-      font-size: 60px;
-      font-weight: 700; }
-  main .fourth-section .second {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 40px; }
-    main .fourth-section .second div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      max-width: 350px;
-      height: 490px;
-      text-align: center;
-      justify-content: space-around; }
-      main .fourth-section .second div h1 {
-        font-size: 180px; }
-      main .fourth-section .second div h2 {
-        font-size: 40px;
-        font-weight: 700; }
-      main .fourth-section .second div p {
-        font-size: 22px; }
+  background-color: #FF6B22;
+}
+main .fourth-section .first {
+  text-align: center;
+  padding-top: 100px;
+}
+main .fourth-section .first h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+main .fourth-section .second {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+main .fourth-section .second div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px;
+  height: 490px;
+  text-align: center;
+  justify-content: space-around;
+}
+main .fourth-section .second div h1 {
+  font-size: 180px;
+}
+main .fourth-section .second div h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+main .fourth-section .second div p {
+  font-size: 22px;
+}
 main .fifth-section {
   display: flex;
-  justify-content: space-around; }
-  main .fifth-section div {
-    max-width: 406px;
-    margin-top: 50px; }
-    main .fifth-section div h1 {
-      font-size: 60px;
-      font-weight: 700; }
-    main .fifth-section div p {
-      font-size: 18px;
-      font-weight: 500;
-      margin-top: 26px; }
-      main .fifth-section div p span {
-        color: #FF6B22; }
+  justify-content: space-around;
+}
+main .fifth-section div {
+  max-width: 406px;
+  margin-top: 50px;
+}
+main .fifth-section div h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+main .fifth-section div p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 26px;
+}
+main .fifth-section div p span {
+  color: #FF6B22;
+}
 
 /*# sourceMappingURL=index.css.map */
