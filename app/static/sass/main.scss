@@ -19,6 +19,20 @@ a {
     color: inherit;
 }
 
+#fullpage {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-color: $second-black;
+  }
+
 body {
     background-color: $second-white;
     font-family: 'Roboto', sans-serif;

@@ -151,12 +151,13 @@ main {
             display: flex;
             justify-content: space-around;
             align-items: center;
-            margin-bottom: 30px;
+            margin-bottom: 8px;
         }
 
         img {
-            max-width: 295px;
-            height: 295px;
+            width: 19.4%;
+            height: 233px;
+            object-fit: fill;
             /* box-shadow: 0.5px 0.5px 6px black; */
         }
 

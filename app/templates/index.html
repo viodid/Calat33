@@ -32,8 +32,8 @@
     </section>
     <section class="photos-section">
         <div class="first-row">
-            <img src="static/media/images/1.png">
-            <img src="static/media/images/2.png">
+            <img src="static/media/images/1.png" onclick="window.open(this.src)" role="button">
+            <img src="static/media/images/2.png" onclick="window.open(this.src)" role="button">
             <img src="static/media/images/3.png">
             <img src="static/media/images/4.png">
             <img src="static/media/images/5.png">
@@ -123,5 +123,6 @@
             <img src="static/media/images/10.png">
         </div>
     </section>
+    <div id="fullpage" onclick="this.style.display='none';"></div>
 </main>
 {% endblock %}

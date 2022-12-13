@@ -125,11 +125,12 @@ main .photos-section div {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 8px;
 }
 main .photos-section img {
-  max-width: 295px;
-  height: 295px;
+  width: 19.4%;
+  height: 233px;
+  object-fit: fill;
   /* box-shadow: 0.5px 0.5px 6px black; */
 }
 main .third-section {
