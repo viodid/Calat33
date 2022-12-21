@@ -1,0 +1,105 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Inicio
+{% endblock %}
+
+{% block main %}
+<video playsinline autoplay muted loop class="intro-image" poster="/static/images/poster.jpg">
+  <source src="static/images/eitb_calat.mp4" type="video/mp4">
+  Tu navegador no soporta contenido de video.
+</video>
+
+<div class="first-body">
+  <div class="head-photo">
+    <h1 style="margin-bottom: 0;">Land Art</h1>
+    <div class="line-span"></div>
+  </div>
+  <div class="paragraph0">
+    <p>El Land Art (arte de la tierra) es una corriente artística contemporánea que nace en los años 
+      60 y que se desarrolla a través de la utilización de la naturaleza como marco y elemento de expresión. 
+      El Sand Art (arte de la arena) es una rama concreta del mismo en la que se usa como materia prima la arena de 
+      la playa únicamente.</p>
+  </div>
+  <div class="paragraph0">
+    <p>CALART es un grupo de profesionales que junto al artista, German Cedano, conocido como, Calat 33, 
+      hacemos uso del arte efímero como una herramienta de concienciación y respeto al medio ambiente.
+      <br>Para ello, tenemos 3 líneas de actuación:</p>
+  </div>
+</div>
+
+<div class="header-middlebody">
+  <div class="simple-line"></div>
+  <h1 style='font-size: 2.1rem;'>Nuestros Objetivos</h1>
+</div>
+<div class="body-middlebody">
+  <div class="fix-size-container">
+    <a href="/#mission">
+      <div class="img-wrapper">
+        <img src="static/images/sostenibilidad.jpg" alt="mano con caracolas">
+      </div>
+      <h4>Promover sostenibilidad</h4>
+      <p>Creamos arte efímero que promueve y difunde los valores de las empresas sobre 
+            sostenibilidad, cero impacto ambiental, y respeto al uso de los recursos naturales.</p>
+    </a>
+  </div>
+  <div class="fix-size-container">
+    <a href="/colaboraciones">
+      <div class="img-wrapper">
+        <img src="static/images/colabs/whynot.jpg" alt="calat33 con la fundacion whynot en la playa junto a un dibujo">
+      </div>
+      <h4>Colaboraciones que importan</h4>
+      <p>Realizamos colaboraciones con entidades sin ánimo de lucro que pretendan crear un 
+            impacto en relación con los valores de justicia social, sostenibilidad y equidad.</p>
+    </a>
+  </div>
+  <div class="fix-size-container">
+    <a href="/talleres">
+      <div class="img-wrapper">
+        <img src="static/images/arena.jpg" alt="arena de la playa">
+      </div>
+      <h4>Marcar la diferencia</h4>
+      <p>Impartimos talleres de concienciación y sensibilización medioambiental que integren diversos aspectos
+            de la realidad natural más cercana (mareas, fases lunares, meteorología…)</p>
+    </a>
+  </div>
+</div>
+
+<div class="island" id="mission">
+  <img src="static/images/olasv1.png" alt="fondo de pantalla">
+</div>
+{% endblock %}
+{% block second_main %}
+<div class="second-body">
+  <div class="container-blue-containers">
+    <div class="blue-containers" data-aos='fade-up'>
+      <div style="text-align: center">
+        <h2 style='color:aqua'>Misión</h2>
+      </div>
+      <p>Tenemos el propóstio de incentivar, inspirar, y manifestar el amor y el respeto de las empresas y organizaciones
+          hacia el medio ambiente.<br><br>Mediante una diáfana gestion de los recursos empleados y una devoto respeto hacia 
+          la Pachamama.</p>
+    </div>
+    <div class="blue-containers" data-aos='fade-up'>
+      <div style="text-align: center">
+        <h2 style='color:aquamarine'>Visión</h2>
+      </div>
+      <p>Soñamos con formar parte de un movimiento que inspire confianza hacia un futuro mejor, en donde organizaciones como la nuestra
+          no sean la excepción, sino la regla.<br><br>Disfrutando el privilegio de pertenecer a un todo común, compartido y transparente.
+        </p>
+    </div>
+    <div class="bubbles">
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+    </div>
+  </div>
+</div>
+{% endblock %}

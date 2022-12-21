@@ -96,9 +96,32 @@ header nav div a:active {
   color: #FF6B22;
 }
 
+.banner-layout {
+  background-image: url(/static/media/images/arena-banner.png);
+  background-size: cover;
+  height: 284px;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 90px;
+  padding: 0 100px;
+}
+.banner-layout .first {
+  font-size: 80px;
+  font-weight: 900;
+  color: white;
+}
+.banner-layout .second {
+  font-size: 100px;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+
 footer {
   background-color: #FF6B22;
-  padding: 0px 170px;
+  padding: 0px 100px;
   color: #FFFEFE;
 }
 footer .first-footer {

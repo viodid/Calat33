@@ -1,0 +1,96 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Contacto
+{% endblock %}
+
+{% block main %}
+
+{% if request.MOBILE %}
+<div style="margin-top:20px; z-index:-1;">
+    <div>
+        <form method="post" action="/contact">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="fname">Nombre:*</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="fname" placeholder="Escriba su nombre" name="name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="lname">Apellido: (opcional)</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="lname" placeholder="Escriba su apellido" name="surname">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Email:*</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" placeholder="Escriba su correo electrónico"
+                        name="email">
+                </div>
+            </div>
+            <span style="margin-left:10px; padding-bottom:20px">*Campos requeridos</span>
+            <div class="form-group" style="margin-top:10px">
+                <label class="control-label col-sm-2" for="comment">Mensaje:</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" rows="5" id="comment" name="message"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10" style="display:flex; justify-content:center">
+                    <button type="submit" class="button">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% else %}
+<div class="container contact" style="margin-top: 3rem; margin-bottom: 3rem;">
+    <div class="row">
+        <div class="col-md-3" style="background-color: var(--second);border-radius: 20px 0 0 20px;">
+            <div class=" contact-info">
+                <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image" style="width:20%" />
+                <h4>Nos encantaría escuchar de ti!</h4>
+            </div>
+        </div>
+        <form class="col-md-9" method="post" action="/contact">
+            <div class="contact-form">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="fname">Nombre:*</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="fname" placeholder="Escriba su nombre" name="name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="lname">Apellido:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="lname" placeholder="Escriba su apellido"
+                            name="surname">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="email">Email:*</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="Escriba su correo electrónico"
+                            name="email">
+                    </div>
+                </div>
+                <span style="margin-left:10px; padding-bottom:20px">*Campos requeridos</span>
+                <div class="form-group" style="margin-top:10px">
+                    <label class="control-label col-sm-2" for="comment">Mensaje:</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" rows="5" id="comment" name="message"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10" style="display:flex; justify-content:center">
+                        <button type="submit" class="button">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
