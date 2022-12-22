@@ -1,0 +1,34 @@
+.container-colabs {
+  margin: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container-colabs .colabs-container {
+  max-width: 650px;
+}
+.container-colabs video, .container-colabs img {
+  width: 650px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.container-colabs img {
+  height: 395px;
+}
+.container-colabs .large {
+  height: 750px;
+}
+.container-colabs h3 {
+  font-family: "Montserrat";
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.container-colabs .bi-facebook {
+  margin-left: 20px;
+}
+.container-colabs a {
+  color: #00DDC2;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=colaboraciones.css.map */

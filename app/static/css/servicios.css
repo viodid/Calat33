@@ -1,0 +1,50 @@
+.first-section {
+  padding: 0 100px;
+  background-image: url(/static/media/images/lines_index.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.first-section .first {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.first-section .first img {
+  width: 89px;
+  margin-bottom: 25px;
+}
+.first-section .first h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+.first-section .second {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.first-section .second .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.first-section .second .container p {
+  font-size: 25px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: #00DDC2;
+}
+.first-section .second .container li {
+  margin-top: 10px;
+}
+.first-section .second .container a:hover {
+  color: #00DDC2;
+}
+.first-section .second .container a:active {
+  color: #00DDC2;
+}
+
+/*# sourceMappingURL=servicios.css.map */

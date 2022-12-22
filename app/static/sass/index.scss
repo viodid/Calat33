@@ -1,6 +1,5 @@
 @import '__default.scss';
 main {
-
     .first-section {
         background-image: url(/static/media/images/tide_index.jpg);
         background-size: cover;
@@ -32,7 +31,7 @@ main {
                 font-size: 160px;
                 font-weight: 900;
                 color: transparent;
-                -webkit-text-stroke: 1px white;
+                -webkit-text-stroke: 2px white;
                 text-align: center;
             }
         }

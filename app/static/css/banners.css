@@ -1,0 +1,134 @@
+.banner-layout {
+  background-image: url(/static/media/images/arena-banner.png);
+  background-size: cover;
+  height: 284px;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 90px;
+  padding: 0 100px;
+}
+.banner-layout .first {
+  font-size: 80px;
+  font-weight: 900;
+  color: white;
+}
+.banner-layout .second {
+  font-size: 100px;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+}
+
+.contact-banner {
+  background-image: url(/static/media/images/lines_index.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 780px;
+}
+.contact-banner .zen-container {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+.contact-banner .zen-container .image-wrapper {
+  height: 297px;
+  width: 1256px;
+  background-image: url(/static/media/images/zen_index.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0.5px 0.5px 6px black;
+  border-radius: 41px;
+  display: flex;
+  justify-content: space-around;
+}
+.contact-banner .zen-container .image-wrapper .letters-container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-banner .zen-container .image-wrapper .letters-container .first {
+  font-weight: 700;
+  font-size: 45px;
+  color: white;
+}
+.contact-banner .zen-container .image-wrapper .letters-container span {
+  color: #1E1E1E;
+}
+.contact-banner .zen-container .image-wrapper .letters-container .second {
+  font-size: 22px;
+  font-weight: 700;
+  color: #FFFEFE;
+}
+.contact-banner .zen-container .image-wrapper .second {
+  width: 630px;
+}
+.contact-banner .zen-container .image-wrapper .button-container {
+  display: flex;
+  align-items: center;
+  width: 210px;
+  justify-content: center;
+}
+.contact-banner .zen-container .image-wrapper .button-container a {
+  width: 100%;
+  text-align: center;
+  background-color: #FFFEFE;
+  padding: 14px;
+  color: #FF6B22;
+  border-radius: 30px;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+.contact-banner .zen-container .image-wrapper .button-container a:hover {
+  box-shadow: 0.5px 0.5px 6px black;
+}
+.contact-banner .zen-container .image-wrapper .button-container a:active {
+  background-color: #ccc;
+}
+.contact-banner .zen-container .sand-background {
+  background-image: url("/static/media/images/second_zen_background.png");
+}
+.contact-banner .recuerdos-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* text-shadow: 0px 1px 3px black; */
+  height: 307px;
+}
+.contact-banner .recuerdos-container .first {
+  font-size: 40px;
+  font-weight: 700;
+  color: #FF6B22;
+}
+.contact-banner .recuerdos-container .second {
+  font-size: 90px;
+  font-weight: 700;
+  color: #FF6B22;
+}
+
+.photos-section {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+.photos-section div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.photos-section img {
+  width: 19.4%;
+  height: 233px;
+  object-fit: fill;
+}
+
+.no-background {
+  background-image: none;
+}
+
+/*# sourceMappingURL=banners.css.map */

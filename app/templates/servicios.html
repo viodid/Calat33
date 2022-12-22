@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+{% block stylesheet %}
+<link rel="stylesheet" href="static/css/servicios.css">
+<link rel="stylesheet" href="static/css/banners.css">
+    {% endblock %}
+    {% block body %}
+<main>
+    <section class="banner-layout">
+        <span class="first">SERVICIOS</span>
+        <span class="second">CALART3D</span>
+    </section>
+    <section class="first-section no-background">
+        <div class="first">
+            <img src="/static/media/images/waves_yellow.png" alt="Yellow land symbol">
+            <h1>NUESTROS SERVICIOS</h1>
+        </div>
+        <div class="second">
+            <div class="container">
+                <img src="/static/media/images/regalo.png" alt="Regalos">
+                <p>REGALOS</p>
+                <ul>
+                    <li><a href="">HOMENAJES</a></li>
+                    <li><a href="">ANIVERSARIOS</a></li>
+                    <li><a href="">BODAS</a></li>
+                </ul>
+            </div>
+            <div class="container">
+                <img src="/static/media/images/publi.png" alt="Publicidad">
+                <p>PUBLIBIDAD</p>
+                <ul>
+                    <li><a href="">MARCAS</a></li>
+                    <li><a href="">SPOT</a></li>
+                    <li><a href="">CAMPAÑAS</a></li>
+                </ul>
+            </div>
+            <div class="container">
+                <img src="/static/media/images/eventos.png" alt="Eventos">
+                <p>EVENTOS</p>
+                <ul>
+                    <li><a href="">TALLERES</a></li>
+                    <li><a href="">MARKETING EXPERIMENTAL</a></li>
+                    <li><a href="">ANIVERSARIOS DE EMPRESAS</a></li>
+                </ul>
+            </div>
+            <div class="container">
+                <img src="/static/media/images/equipo.png" alt="Equipo">
+                <p>TEAM BUILDER</p>
+                <ul>
+                    <li><a href="">COHESIÓN DE EQUIPO</a></li>
+                    <li><a href="">PROCESOS CREATIVOS</a></li>
+                    <li><a href="">DINÁMICA DE LOS CICLOS</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="contact-banner">
+        <div class="zen-container">
+            <div class="image-wrapper sand-background">
+                <div class="letters-container second">
+                    <p class="first">¿QUIERES HACER VISIBLE <span class="black">LOS VALORES DE TU EMPRESA</span> ?</p>
+                    <p class="second">LLÁMAME O ENVÍAME UN EMAIL</span>
+                </div>
+                <div class="button-container">
+                    <a href="/contact">CONTACTAR</a>
+                </div>
+            </div>
+        </div>
+        <div class="recuerdos-container">
+            <p class="first">"QUE TU MARCA</p>
+            <p class="second">DEJE HUELLA"</p>
+        </div>
+    </section>
+    <section class="photos-section">
+        <div class="second-row">
+            <img src="static/media/images/6.png">
+            <img src="static/media/images/7.png">
+            <img src="static/media/images/8.png">
+            <img src="static/media/images/9.png">
+            <img src="static/media/images/10.png">
+        </div>
+    </section>
+</main>
+{% endblock %}

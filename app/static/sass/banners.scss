@@ -1,0 +1,155 @@
+@import '__default.scss';
+
+.banner-layout {
+    background-image: url(/static/media/images/arena-banner.png);
+    background-size: cover;
+    height: 284px;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 90px;
+    padding: 0 100px;
+
+    .first {
+        font-size: 80px;
+        font-weight: 900;
+        color: white;
+    }
+
+    .second {
+        font-size: 100px;
+        font-weight: 900;
+        color: transparent;
+        -webkit-text-stroke: 2px white;
+    }
+}
+
+.contact-banner {
+    background-image: url(/static/media/images/lines_index.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 780px;
+
+    .zen-container {
+        padding: 60px 20px;
+        display: flex;
+        justify-content: center;
+
+        .image-wrapper {
+            height: 297px;
+            width: 1256px;
+            background-image: url(/static/media/images/zen_index.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 0.5px 0.5px 6px black;
+            border-radius: 41px;
+            display: flex;
+            justify-content: space-around;
+
+            .letters-container {
+                width: 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .first {
+                    font-weight: 700;
+                    font-size: 45px;
+                    color: white;
+                }
+
+                span {
+                    color: $first-black
+                }
+
+                .second {
+                    font-size: 22px;
+                    font-weight: 700;
+                    color: $first-white;
+                }
+            }
+
+            .second {
+                width: 630px;
+
+            }
+
+            .button-container {
+                display: flex;
+                align-items: center;
+                width: 210px;
+                justify-content: center;
+
+                a {
+                    width: 100%;
+                    text-align: center;
+                    background-color: $first-white;
+                    padding: 14px;
+                    color: $orange;
+                    border-radius: 30px;
+                    font-size: 22px;
+                    font-weight: 700;
+                    letter-spacing: 1.4px;
+                }
+
+                a:hover {
+                    box-shadow: 0.5px 0.5px 6px black;
+                }
+
+                a:active {
+                    background-color: #ccc;
+                }
+            }   
+        }
+
+        .sand-background {
+            background-image: url("/static/media/images/second_zen_background.png");
+        }
+    }
+
+    .recuerdos-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* text-shadow: 0px 1px 3px black; */
+        height: 307px;
+
+        .first {
+            font-size: 40px;
+            font-weight: 700;
+            color: $orange;
+        }
+
+        .second {
+            font-size: 90px;
+            font-weight: 700;
+            color: $orange;
+        }
+    }
+}
+
+.photos-section {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+
+    div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+
+    img {
+        width: 19.4%;
+        height: 233px;
+        object-fit: fill;
+    }
+
+}
+
+.no-background {
+    background-image: none;
+}

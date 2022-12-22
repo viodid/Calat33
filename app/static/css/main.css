@@ -32,7 +32,7 @@ a {
 }
 
 body {
-  background-color: #E5E5E5;
+  background-color: #FFFEFE;
   font-family: "Roboto", sans-serif;
 }
 
@@ -44,7 +44,7 @@ body {
 header .info {
   display: flex;
   background-color: #1E1E1E;
-  color: #E5E5E5;
+  color: #EFEFEF;
   justify-content: space-between;
   font-size: 14px;
 }
@@ -94,29 +94,6 @@ header nav div a:hover {
 }
 header nav div a:active {
   color: #FF6B22;
-}
-
-.banner-layout {
-  background-image: url(/static/media/images/arena-banner.png);
-  background-size: cover;
-  height: 284px;
-  background-position: top;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  line-height: 90px;
-  padding: 0 100px;
-}
-.banner-layout .first {
-  font-size: 80px;
-  font-weight: 900;
-  color: white;
-}
-.banner-layout .second {
-  font-size: 100px;
-  font-weight: 900;
-  color: transparent;
-  -webkit-text-stroke: 1px white;
 }
 
 footer {
