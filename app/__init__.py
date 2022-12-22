@@ -21,3 +21,8 @@ def servicios():
 @app.route("/colaboraciones")
 def colaboraciones():
     return render_template("colaboraciones.html")
+
+
+@app.route("/contacto")
+def contacto():
+    return render_template("contacto.html")

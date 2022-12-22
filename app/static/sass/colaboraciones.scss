@@ -1,12 +1,16 @@
 @import '__default.scss';
 
 .container-colabs {
-    margin: 100px;
+    padding: 70px 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-image: url(/static/media/images/lines_index.png);
+    background-size: auto;
+    background-repeat: no-repeat;
 
     .colabs-container {
+        margin-top: 30px;
         max-width: 650px;
     }
 
@@ -14,10 +18,12 @@
         width:650px;
         border: 2px solid black;
         border-radius: 5px;
+        margin-bottom: 30px;
     }
 
     img {
         height: 395px;
+
     }
 
     .large {
@@ -34,8 +40,16 @@
         margin-left: 20px;
     }
 
-    a {
+    .links {
         color: $bluegreen;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
+
+        a:hover {
+            color: $first-black;
+        }
+
+        a:active {
+            color: $first-black;
+        }
     }
 }
