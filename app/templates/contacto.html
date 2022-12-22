@@ -1,13 +1,31 @@
 {% extends "layout.html" %}
 {% block stylesheet %}
-<link rel="stylesheet" href="static/css/colaboraciones.css">
+<link rel="stylesheet" href="static/css/contacto.css">
 <link rel="stylesheet" href="static/css/banners.css">
-    {% endblock %}
-    {% block body %}
+{% endblock %}
+{% block body %}
 <main>
     <section class="banner-layout">
         <span class="first">CONTACTO</span>
         <span class="second">ESCRIBENOS</span>
+    </section>
+    <section class="first-section">
+        <div class="first">
+            <span class="up">Información</span>
+            <span class="down">info@calat33.com</span>
+            <span class="down">(+34)635556523</span>
+        </div>
+        <div class="second">
+            <h2>FORMULARIO</h2>
+            <form action="action_page.php">
+                <div>
+                    <input type="text" id="name" name="name" class="top" placeholder="Nombre">
+                    <input type="email" id="email" name="email" class="top" placeholder="Email">
+                </div>
+                <textarea id="subject" name="subject" placeholder="Tu mensaje*"></textarea>
+                <input type="submit" value="Submit" class="submit">
+            </form> 
+        </div>
     </section>
 </main>
 {% endblock %}

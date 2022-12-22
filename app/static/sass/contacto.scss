@@ -1,0 +1,76 @@
+@import '__default.scss';
+
+.first-section {
+    display: flex;
+    height: 600px;
+    background-image: url(/static/media/images/lines_index.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    .first {
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        align-items: center;
+        background-color: $yellow;
+        height: 272px;
+        justify-content: center;
+        margin-top: 100px;
+
+        .up {
+            font-size: 25px;
+            font-weight: 700;
+            color: #454545;
+            margin-bottom: 10px;
+        }
+
+        .down {
+            font-size: 30px;
+            font-weight: 700;
+        }
+    }
+
+    .second {
+        margin-top: 135px;
+        margin-left: 100px;
+
+        h2 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            .top {
+                width: 230px;
+                margin-right: 20px;
+                margin-bottom: 20px;
+            }
+
+            textarea {
+                width: 484px;
+                border: 1.5px solid gray;
+                height: 150px;
+                margin-bottom: 20px;
+            }
+
+            input {
+                height: 30px;
+                border: 1.5px solid gray;
+            }
+
+            input:active {
+                background-color: #FF7B33;
+            }
+
+            .submit {
+                width: 130px;
+                background-color: $orange;
+                color: $first-white;
+            }
+        }
+    }
+}
