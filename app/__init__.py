@@ -1,7 +1,9 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
+from .mail import sendmail
+import json
 
 app = Flask(__name__)
-
+app.config.from_file("/etc/calat33/config.json", load=json.load)
 
 @app.route("/")
 def index():
@@ -23,6 +25,27 @@ def colaboraciones():
     return render_template("colaboraciones.html")
 
 
-@app.route("/contacto")
+@app.route("/contacto", methods=["GET", "POST"])
 def contacto():
+    if request.method == 'POST':
+        name = request.form.get("name")
+        email = request.form.get("email")
+        message = request.form.get("message")
+
+        if not message or not email:
+            print(message, email)
+            return render_template("contacto.html", notification="""
+            Faltan campos email o mensaje""")
+
+        message = f"""\
+        {message}<br><br>
+        <b>From:</b> {name}<br>{email}
+        """
+
+        subject = "Contacto Web"
+
+        sendmail(message, subject, [email])
+
+        return render_template("apology.html", notification="Mensaje Enviado!")
+
     return render_template("contacto.html")

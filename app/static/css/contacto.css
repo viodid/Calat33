@@ -1,3 +1,13 @@
+.notification {
+  font-size: 20px;
+  background-color: #FF6B22;
+  color: #FFFEFE;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .first-section {
   display: flex;
   height: 600px;

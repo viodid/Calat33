@@ -9,6 +9,9 @@
         <span class="first">CONTACTO</span>
         <span class="second">ESCRIBENOS</span>
     </section>
+    {% if notification %}
+    <p class="notification">{{ notification }}</p>
+    {% endif %}
     <section class="first-section">
         <div class="first">
             <span class="up">Información</span>
@@ -17,12 +20,12 @@
         </div>
         <div class="second">
             <h2>FORMULARIO</h2>
-            <form action="action_page.php">
+            <form action="/contacto" method="post">
                 <div>
                     <input type="text" id="name" name="name" class="top" placeholder="Nombre">
-                    <input type="email" id="email" name="email" class="top" placeholder="Email">
+                    <input type="email" id="email" name="email" class="top" placeholder="Email" required>
                 </div>
-                <textarea id="subject" name="subject" placeholder="Tu mensaje*"></textarea>
+                <textarea id="subject" name="message" placeholder="Tu mensaje*" required></textarea>
                 <input type="submit" value="Submit" class="submit">
             </form> 
         </div>
