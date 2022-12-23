@@ -1,9 +1,15 @@
 from flask import Flask, render_template, request
-from .mail import sendmail
+from redmail import gmail
 import json
 
 app = Flask(__name__)
-app.config.from_file("/etc/calat33/config.json", load=json.load)
+
+with open('/etc/calat33/config.json') as config_file:
+    config = json.load(config_file)
+
+gmail.username = config["EMAIL_SENDER"]
+gmail.password = config["EMAIL_PASSWORD"]
+
 
 @app.route("/")
 def index():
@@ -44,8 +50,40 @@ def contacto():
 
         subject = "Contacto Web"
 
-        sendmail(message, subject, [email])
+        sendmail(message, subject, [config["EMAIL_SENDER"]])
 
-        return render_template("apology.html", notification="Mensaje Enviado!")
+        return render_template("contacto.html", notification="Mensaje enviado, pronto recibirás una respuesta!")
 
     return render_template("contacto.html")
+
+
+def sendmail(message_client, subject, recipients):
+    message = f"""\
+        <html>
+            <body style="padding:1.5rem; background: transparent;
+            font-size:1.1rem; font">
+                <div style="display:flex; justify-content:center; align-items:
+                center; margin-bottom:2rem;">
+                    <img src="https://i.ibb.co/xmtSkh6/calat-email.png" style="max-width:300px">
+                </div>
+                <p>{message_client}</p>
+                <div>
+                    <a href="https://www.facebook.com/CALAT-33-169199418110806" style='margin-right: 0.5rem;'>
+                        Facebook
+                    </a>
+                    <a href="https://www.instagram.com/calat33/" style='margin-right: 0.5rem;'>
+                        Instagram
+                    </a>
+                    <a href="https://twitter.com/hashtag/calat33">
+                        Twitter
+                    </a>
+                </div>
+            </body>
+        </html>
+        """
+    gmail.send(
+        subject=subject,
+        receivers=recipients,
+        html=message
+    )
+    return True
