@@ -10,6 +10,10 @@ html {
     font-size: 16px;
 }
 
+.hide {
+    display: none;
+}
+
 ul {
     list-style-type: none;
 }
@@ -171,6 +175,16 @@ footer {
 
     hr {
         background-color: $first-white;
+    }
+}
+
+@media only screen and (max-width: 1182px) {
+    #media {
+        display: none;
+    }
+
+    header .info {
+        justify-content: center;
     }
 }
 

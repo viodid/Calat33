@@ -8,6 +8,10 @@ html {
   font-size: 16px;
 }
 
+.hide {
+  display: none;
+}
+
 ul {
   list-style-type: none;
 }
@@ -141,6 +145,15 @@ footer .last-footer {
 }
 footer hr {
   background-color: #FFFEFE;
+}
+
+@media only screen and (max-width: 1182px) {
+  #media {
+    display: none;
+  }
+  header .info {
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -15,7 +15,7 @@
     <body>
         <header>
             <div class="info">
-                <ul class="contact-header">
+                <ul class="contact-header" id="media">
                     <li>
                         <img src="https://icongr.am/material/phone.svg?size=23&color=ffffff">
                         <span>+34 635 556 523</span>
@@ -43,12 +43,21 @@
                 <div class="logo">
                     <a href="/" class="anchor-logo"><img src="/static/media/logos/calat_orange_front.png"></a>
                 </div>
-                <div class="links">
+                <div class="links" id="media">
                     <a href="/artista">EL ARTISTA</a>
                     <a href="/servicios">SERVICIOS</a>
                     <a href="/colaboraciones">COLABORACIONES</a>
                     <a href="/contacto">CONTACTO</a>
                 </div>
+                <div class="sidebar hide">
+                    <a href="javascript:void(0)" class="close-sidebar">×</a>
+                    <a href="#"></a>
+                    <a href="/artista">EL ARTISTA</a>
+                    <a href="/servicios">SERVICIOS</a>
+                    <a href="/colaboraciones">COLABORACIONES</a>
+                    <a href="/contacto">CONTACTO</a>
+                </div>
+                <button class="hide open-sidebar">☰ </button>
             </nav>
         </header>
         {% block body %}{% endblock %}
