@@ -9,17 +9,38 @@ window.addEventListener('DOMContentLoaded', function() {
     });
     // navbar expand in mobile
     const open = document.querySelector('.open-sidebar');
-    const close = document.querySelector('.close-sidebar');
-    open.addEventListener('click', openNav());
-    close.addEventListener('click', closeNav());
+    let hamburger = false;
+    open.addEventListener('click', () => {
+        if (!hamburger) {
+            document.querySelector("#sidebar").style.height = "300px";
+            document.querySelector("#sidebar").style.width = "100%";
+            // document.querySelector("#sidebar").style.display = "flex";
+            document.querySelector("main").style.marginTop = "376px";
+            // box shadow
+            document.querySelector("nav").style.boxShadow = "none";
+            open.style.transform = "rotate(90deg)";
+            hamburger = true;
+        } else {
+            console.log(hamburger);
+            document.querySelector("#sidebar").style.height = "0";
+            document.querySelector("#sidebar").style.width = "0";
+            // document.querySelector("#sidebar").style.display = "none";
+            document.querySelector("main").style.marginTop= "0";
+            // box shadow
+            document.querySelector("nav").style.boxShadow = "0.5px 0.5px 6px black";
+            open.style.transform = "rotate(0deg)";
+            hamburger = false;
+        }
+    });
+
+    // fixed navbar when scroll down
+    document.addEventListener('scroll', (event) => {
+        if (window.scrollY >= 42.4) {
+            document.querySelector("nav").style.top = 0;
+            document.querySelector("#sidebar").style.top = "77px";
+        } else {
+            document.querySelector("nav").style.top = "40px";
+            document.querySelector("#sidebar").style.top = "116px";
+        }
+    })
 });
-
-function openNav() {
-    document.querySelector(".sidebar").style.width = "450px";
-    document.querySelector("main").style.marginTeft = "450px";
-}
-
-function closeNav() {
-    document.querySelector(".sidebar").style.width = "0";
-    document.querySelector("main").style.marginTop= "0";
-}

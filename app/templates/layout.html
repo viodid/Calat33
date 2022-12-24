@@ -49,17 +49,15 @@
                     <a href="/colaboraciones">COLABORACIONES</a>
                     <a href="/contacto">CONTACTO</a>
                 </div>
-                <div class="sidebar hide">
-                    <a href="javascript:void(0)" class="close-sidebar">×</a>
-                    <a href="#"></a>
-                    <a href="/artista">EL ARTISTA</a>
-                    <a href="/servicios">SERVICIOS</a>
-                    <a href="/colaboraciones">COLABORACIONES</a>
-                    <a href="/contacto">CONTACTO</a>
-                </div>
-                <button class="hide open-sidebar">☰ </button>
+                <svg class="hide open-sidebar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="mdi-menu" width="55" height="55" viewBox="0 0 24 24" fill="#ff6b22"><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"/></svg>
             </nav>
         </header>
+        <div class="hide" id="sidebar">
+            <a href="/artista">EL ARTISTA</a>
+            <a href="/servicios">SERVICIOS</a>
+            <a href="/colaboraciones">COLABORACIONES</a>
+            <a href="/contacto">CONTACTO</a>
+        </div>
         {% block body %}{% endblock %}
         <footer>
             <div class="first-footer">

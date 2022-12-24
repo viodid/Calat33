@@ -42,6 +42,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+main {
+    transition: margin-top .5s;
+    margin-top: 77px;
+}
+
 ::selection {
     background: $orange;
     color: $first-white;
@@ -85,7 +90,9 @@ header {
         align-items: center;
         background-color: $first-white;
         box-shadow: 0.5px 0.5px 6px black;
-        position: sticky;
+        position: fixed;
+        width: 100%;
+        transition: top 0.5s;
 
         div {
             margin: 12px 100px;
@@ -179,12 +186,60 @@ footer {
 }
 
 @media only screen and (max-width: 1182px) {
+
     #media {
         display: none;
+    }
+
+    #sidebar {
+        flex-direction: column;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 116px;
+        left: 0;
+        background-color: $first-white;
+        overflow-x: hidden;
+        transition: 0.5s;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 15px;
+        }
+
+        a:hover, a:active {
+            color: $orange;
+        }
+    }
+
+    .open-sidebar {
+        transition: .5s;
+        margin-right: 42px;
+    }
+
+    .hide {
+        display: block;
     }
 
     header .info {
         justify-content: center;
     }
+
+    .photos-section div {
+        flex-wrap: wrap;
+
+        img {
+            width: 45%!important;
+
+        }
+    }
+
+
+
 }
 

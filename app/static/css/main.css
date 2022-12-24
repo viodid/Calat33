@@ -40,6 +40,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+main {
+  transition: margin-top 0.5s;
+  margin-top: 77px;
+}
+
 ::selection {
   background: #FF6B22;
   color: #FFFEFE;
@@ -73,7 +78,9 @@ header nav {
   align-items: center;
   background-color: #FFFEFE;
   box-shadow: 0.5px 0.5px 6px black;
-  position: sticky;
+  position: fixed;
+  width: 100%;
+  transition: top 0.5s;
 }
 header nav div {
   margin: 12px 100px;
@@ -151,8 +158,44 @@ footer hr {
   #media {
     display: none;
   }
+  #sidebar {
+    flex-direction: column;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 116px;
+    left: 0;
+    background-color: #FFFEFE;
+    overflow-x: hidden;
+    transition: 0.5s;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #sidebar a {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 15px;
+  }
+  #sidebar a:hover, #sidebar a:active {
+    color: #FF6B22;
+  }
+  .open-sidebar {
+    transition: 0.5s;
+    margin-right: 42px;
+  }
+  .hide {
+    display: block;
+  }
   header .info {
     justify-content: center;
+  }
+  .photos-section div {
+    flex-wrap: wrap;
+  }
+  .photos-section div img {
+    width: 45% !important;
   }
 }
 
