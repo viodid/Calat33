@@ -181,9 +181,12 @@ footer hr {
   #sidebar a:hover, #sidebar a:active {
     color: #FF6B22;
   }
+  nav .logo {
+    margin: 12px auto !important;
+  }
   .open-sidebar {
     transition: 0.5s;
-    margin-right: 42px;
+    margin: auto;
   }
   .hide {
     display: block;
@@ -196,6 +199,25 @@ footer hr {
   }
   .photos-section div img {
     width: 45% !important;
+  }
+  footer {
+    padding: 0 30px;
+  }
+  footer .first-footer {
+    padding: 0;
+    padding-top: 30px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .first-footer div {
+    margin-top: 30px;
+  }
+  footer .first-footer .contact-footer {
+    justify-content: center;
+  }
+  footer .last-footer {
+    margin-top: 30px;
   }
 }
 

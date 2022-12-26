@@ -34,7 +34,7 @@
 }
 .contact-banner .zen-container .image-wrapper {
   height: 297px;
-  width: 1256px;
+  width: 80%;
   background-image: url(/static/media/images/zen_index.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -61,6 +61,7 @@
   font-size: 22px;
   font-weight: 700;
   color: #FFFEFE;
+  letter-spacing: 0.2em;
 }
 .contact-banner .zen-container .image-wrapper .second {
   width: 630px;

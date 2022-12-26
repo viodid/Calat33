@@ -21,7 +21,6 @@ window.addEventListener('DOMContentLoaded', function() {
             open.style.transform = "rotate(90deg)";
             hamburger = true;
         } else {
-            console.log(hamburger);
             document.querySelector("#sidebar").style.height = "0";
             document.querySelector("#sidebar").style.width = "0";
             // document.querySelector("#sidebar").style.display = "none";
