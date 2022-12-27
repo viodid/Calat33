@@ -76,4 +76,66 @@
   margin-top: 22px;
 }
 
+@media only screen and (max-width: 1182px) {
+  .first-section {
+    padding: 0 20px;
+    background-image: none;
+  }
+  .first-section .first {
+    height: 150px;
+  }
+  .first-section .first img {
+    width: 50px;
+    margin-bottom: 15px;
+  }
+  .first-section .first h1 {
+    font-size: 20px;
+  }
+  .first-section .second {
+    flex-direction: column;
+  }
+  .first-section .second div {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .first-section .second div h1 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  .first-section .second div h2 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  .first-section .second div p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .first-section .second div .photos-section {
+    margin: 0 !important;
+  }
+  .first-section .second div .photos-section img {
+    width: 80% !important;
+    margin: 0px auto 20px auto !important;
+    height: auto !important;
+  }
+  .second-section {
+    width: 100%;
+    padding: 30px;
+    margin: 0;
+  }
+  .second-section h1 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .second-section p {
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 18px;
+  }
+}
+
 /*# sourceMappingURL=artista.css.map */

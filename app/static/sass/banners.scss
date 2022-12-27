@@ -154,3 +154,70 @@
 .no-background {
     background-image: none;
 }
+
+@media only screen and (max-width: 1182px) {
+    .banner-layout {
+        padding: 0!important;
+        text-align: center!important;
+
+        .first {
+            font-size: 60px!important;
+        }
+
+        .second {
+            font-size: 60px!important;
+        }
+    }
+
+    .contact-banner {
+        height: auto;
+
+        .recuerdos-container {
+            height: auto;
+
+            text-align: center;
+            height: 100px;
+
+            .first {
+                font-size: 20px!important;
+            }
+
+            .second {
+                font-size: 40px!important;
+            }
+        }
+
+        .zen-container .image-wrapper {
+
+            flex-wrap: wrap;
+            width: 100%!important;
+
+            .letters-container {
+                text-align: center;
+
+                .first {
+                    font-size: 28px!important;
+                    margin-top: 20px;
+                }
+
+                .second {
+                    width: auto!important;
+                    font-size: 15px!important;
+                    margin-top: 30px;
+                }
+            }
+
+            .button-container {
+                width: 190px!important;
+
+                a {
+                    font-size: 18px!important;
+                }
+            }
+        }
+    }
+}
+
+
+
+

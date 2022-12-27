@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded', function() {
             document.querySelector("#sidebar").style.height = "0";
             document.querySelector("#sidebar").style.width = "0";
             // document.querySelector("#sidebar").style.display = "none";
-            document.querySelector("main").style.marginTop= "0";
+            document.querySelector("main").style.marginTop= "77px";
             // box shadow
             document.querySelector("nav").style.boxShadow = "0.5px 0.5px 6px black";
             open.style.transform = "rotate(0deg)";

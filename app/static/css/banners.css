@@ -132,4 +132,53 @@
   background-image: none;
 }
 
+@media only screen and (max-width: 1182px) {
+  .banner-layout {
+    padding: 0 !important;
+    text-align: center !important;
+  }
+  .banner-layout .first {
+    font-size: 60px !important;
+  }
+  .banner-layout .second {
+    font-size: 60px !important;
+  }
+  .contact-banner {
+    height: auto;
+  }
+  .contact-banner .recuerdos-container {
+    height: auto;
+    text-align: center;
+    height: 100px;
+  }
+  .contact-banner .recuerdos-container .first {
+    font-size: 20px !important;
+  }
+  .contact-banner .recuerdos-container .second {
+    font-size: 40px !important;
+  }
+  .contact-banner .zen-container .image-wrapper {
+    flex-wrap: wrap;
+    width: 100% !important;
+  }
+  .contact-banner .zen-container .image-wrapper .letters-container {
+    text-align: center;
+  }
+  .contact-banner .zen-container .image-wrapper .letters-container .first {
+    font-size: 28px !important;
+    margin-top: 20px;
+  }
+  .contact-banner .zen-container .image-wrapper .letters-container .second {
+    width: auto !important;
+    font-size: 15px !important;
+    margin-top: 30px;
+  }
+  .contact-banner .zen-container .image-wrapper .button-container {
+    width: 190px !important;
+  }
+  .contact-banner .zen-container .image-wrapper .button-container a {
+    font-size: 18px !important;
+  }
+}
+
 /*# sourceMappingURL=banners.css.map */

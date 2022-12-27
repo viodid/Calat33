@@ -199,6 +199,7 @@ footer hr {
   }
   .photos-section div img {
     width: 45% !important;
+    margin: 5px auto !important;
   }
   footer {
     padding: 0 30px;
