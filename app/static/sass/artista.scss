@@ -59,17 +59,10 @@
                 margin-bottom: 16px;
             }
 
-            .photos-section {
-                display: block;
-
-                img {
-                    filter: drop-shadow(-22px -17px 0px $yellow);
-                    margin-bottom: 30px;
-                    width: 85%;
-                    height: auto;
-                }
+            img {
+                filter: drop-shadow(-22px -17px 0px $yellow);
+                margin-bottom: 30px;
             }
-
         }
     }
 
@@ -142,15 +135,11 @@
                     margin-bottom: 10px;
                 }
 
-                .photos-section {
-                    margin: 0!important;
-                    display: flex;
 
-                    img {
-                        width: 80%!important;
-                        margin: 0px auto 20px auto!important;
-                        height: auto!important;
-                    }
+                img {
+                    width: 80%!important;
+                    margin: 0px auto 20px auto!important;
+                    height: auto!important;
                 }
             }
         }

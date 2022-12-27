@@ -81,7 +81,7 @@ header nav {
   position: fixed;
   width: 100%;
   transition: top 0.5s;
-  z-index: 3;
+  z-index: 2;
 }
 header nav div {
   margin: 12px 100px;
@@ -163,7 +163,7 @@ footer hr {
     flex-direction: column;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 116px;
     left: 0;
     background-color: #FFFEFE;
@@ -201,6 +201,7 @@ footer hr {
   .photos-section div img {
     width: 45% !important;
     margin: 5px auto !important;
+    height: 233px !important;
   }
   footer {
     padding: 0 30px;

@@ -54,6 +54,7 @@
   margin-bottom: 20px;
 }
 .first-section .second form textarea {
+  font-family: "Roboto", sans-serif;
   width: 484px;
   border: 1.5px solid gray;
   height: 150px;
@@ -70,6 +71,24 @@
   width: 130px;
   background-color: #FF6B22;
   color: #FFFEFE;
+}
+
+@media only screen and (max-width: 1182px) {
+  .first-section {
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .first-section .first {
+    width: 100%;
+    height: 200px;
+    margin-top: 45px;
+  }
+  .first-section .second {
+    margin: 30px;
+  }
+  .first-section .second textarea {
+    width: 100% !important;
+  }
 }
 
 /*# sourceMappingURL=contacto.css.map */

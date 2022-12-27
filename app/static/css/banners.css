@@ -160,6 +160,7 @@
   .contact-banner .zen-container .image-wrapper {
     flex-wrap: wrap;
     width: 100% !important;
+    padding: 14px;
   }
   .contact-banner .zen-container .image-wrapper .letters-container {
     text-align: center;

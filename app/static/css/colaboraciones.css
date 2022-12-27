@@ -34,6 +34,8 @@
 .container-colabs .links {
   color: #00DDC2;
   margin-bottom: 15px;
+  display: flex;
+  align-items: center;
 }
 .container-colabs .links a:hover {
   color: #1E1E1E;
@@ -41,8 +43,17 @@
 .container-colabs .links a:active {
   color: #1E1E1E;
 }
+.container-colabs .links svg {
+  margin-right: 5px;
+}
 
 @media only screen and (max-width: 1182px) {
+  .banner-layout .first {
+    font-size: 40px !important;
+  }
+  .banner-layout .second {
+    font-size: 45px !important;
+  }
   .container-colabs {
     padding: 30px !important;
   }

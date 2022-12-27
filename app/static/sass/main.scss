@@ -93,7 +93,7 @@ header {
         position: fixed;
         width: 100%;
         transition: top 0.5s;
-        z-index: 3;
+        z-index: 2;
 
         div {
             margin: 12px 100px;
@@ -196,7 +196,7 @@ footer {
         flex-direction: column;
         width: 0;
         position: fixed;
-        z-index: 1;
+        z-index: 2;
         top: 116px;
         left: 0;
         background-color: $first-white;
@@ -240,7 +240,8 @@ footer {
 
         img {
             width: 45%!important;
-            margin: 5px auto!important
+            margin: 5px auto!important;
+            height: 233px!important;
         }
     }
 

@@ -1,6 +1,5 @@
 window.addEventListener('DOMContentLoaded', function() {
-    const imgs = document.querySelectorAll('.photos-section>img');
-    console.log(imgs);
+    const imgs = document.querySelectorAll('.photos-section img, .zoom img');
     const fullPage = document.querySelector('#fullpage');
     imgs.forEach(img => {
         img.addEventListener('click', function() {

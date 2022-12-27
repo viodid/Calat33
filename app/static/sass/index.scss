@@ -154,8 +154,8 @@ main {
         }
 
         img {
-            width: 19.4%;
-            height: 233px;
+            width: 24.4%;
+            height: 300px;
             object-fit: fill;
             /* box-shadow: 0.5px 0.5px 6px black; */
         }
@@ -317,6 +317,7 @@ main {
 
                 flex-wrap: wrap;
                 width: 100%!important;
+                padding: 14px;
 
                 .letters-container {
                     text-align: center;

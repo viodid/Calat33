@@ -43,6 +43,8 @@
     .links {
         color: $bluegreen;
         margin-bottom: 15px;
+        display: flex;
+        align-items: center;
 
         a:hover {
             color: $first-black;
@@ -51,10 +53,26 @@
         a:active {
             color: $first-black;
         }
+
+        svg {
+            margin-right: 5px;
+        }
     }
 }
 
 @media only screen and (max-width: 1182px) {
+    
+    .banner-layout {
+
+        .first {
+            font-size: 40px!important;
+        }
+
+        .second {
+            font-size: 45px!important;
+        }
+    }
+
     .container-colabs {
         padding: 30px!important;
 
@@ -63,5 +81,4 @@
             height: auto!important;
         }
     }
-
 }

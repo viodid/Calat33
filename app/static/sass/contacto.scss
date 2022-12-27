@@ -61,6 +61,7 @@
             }
 
             textarea {
+                font-family: 'Roboto', sans-serif;
                 width: 484px;
                 border: 1.5px solid gray;
                 height: 150px;
@@ -82,5 +83,28 @@
                 color: $first-white;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 1182px) {
+
+    .first-section {
+        height: auto;
+        flex-wrap: wrap;
+
+        .first {
+            width: 100%;
+            height: 200px;
+            margin-top: 45px;
+        }
+
+        .second {
+            margin: 30px;
+
+            textarea {
+                width: 100%!important;
+            }
+        }
+
     }
 }
