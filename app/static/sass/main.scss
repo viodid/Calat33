@@ -93,6 +93,7 @@ header {
         position: fixed;
         width: 100%;
         transition: top 0.5s;
+        z-index: 3;
 
         div {
             margin: 12px 100px;
@@ -239,7 +240,7 @@ footer {
 
         img {
             width: 45%!important;
-            margin: 5px auto!important;
+            margin: 5px auto!important
         }
     }
 
@@ -254,7 +255,7 @@ footer {
             text-align: center;
 
             div {
-                margin-top: 30px;
+                margin: 30px auto 0 auto;
             }
 
             .contact-footer {
@@ -263,6 +264,7 @@ footer {
         }
         
         .last-footer {
+            font-size: 12px;
             margin-top: 30px;
         }
     }

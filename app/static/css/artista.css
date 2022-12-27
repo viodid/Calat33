@@ -50,9 +50,15 @@
   font-size: 18px;
   margin-bottom: 16px;
 }
-.first-section .second div img {
+.first-section .second div .photos-section {
+  display: block;
+}
+.first-section .second div .photos-section img {
   filter: drop-shadow(-22px -17px 0px #FFE143);
   margin-bottom: 30px;
+  width: 85%;
+  height: auto;
+  z-index: -1;
 }
 
 .second-section {
@@ -116,6 +122,7 @@
   }
   .first-section .second div .photos-section {
     margin: 0 !important;
+    display: flex;
   }
   .first-section .second div .photos-section img {
     width: 80% !important;

@@ -58,3 +58,32 @@
     }
 }
 
+@media only screen and (max-width: 1182px) {
+
+    .first-section {
+        padding: 0 20px;
+        background-image: none;
+
+        .first {
+            height: 150px;
+
+            img {
+                width: 50px;
+                margin-bottom: 15px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+        }
+
+        .second {
+            flex-wrap: wrap;
+
+            .container {
+                width: 100%;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}

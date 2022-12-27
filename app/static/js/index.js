@@ -1,5 +1,6 @@
 window.addEventListener('DOMContentLoaded', function() {
-    const imgs = document.querySelectorAll('.photos-section img');
+    const imgs = document.querySelectorAll('.photos-section>img');
+    console.log(imgs);
     const fullPage = document.querySelector('#fullpage');
     imgs.forEach(img => {
         img.addEventListener('click', function() {
@@ -42,4 +43,8 @@ window.addEventListener('DOMContentLoaded', function() {
             document.querySelector("#sidebar").style.top = "116px";
         }
     })
+
+    // add current year to footer
+    const currentYear = new Date().getFullYear();
+    document.getElementById("year").innerText = currentYear;
 });

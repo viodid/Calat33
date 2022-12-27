@@ -53,3 +53,15 @@
         }
     }
 }
+
+@media only screen and (max-width: 1182px) {
+    .container-colabs {
+        padding: 30px!important;
+
+        video, img {
+            width: 100%!important;
+            height: auto!important;
+        }
+    }
+
+}

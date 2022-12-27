@@ -44,7 +44,31 @@
   color: #00DDC2;
 }
 .first-section .second .container a:active {
-  color: #00DDC2;
+  colohover: #00DDC2;
+}
+
+@media only screen and (max-width: 1182px) {
+  .first-section {
+    padding: 0 20px;
+    background-image: none;
+  }
+  .first-section .first {
+    height: 150px;
+  }
+  .first-section .first img {
+    width: 50px;
+    margin-bottom: 15px;
+  }
+  .first-section .first h1 {
+    font-size: 20px;
+  }
+  .first-section .second {
+    flex-wrap: wrap;
+  }
+  .first-section .second .container {
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }
 
 /*# sourceMappingURL=servicios.css.map */

@@ -42,4 +42,14 @@
   color: #1E1E1E;
 }
 
+@media only screen and (max-width: 1182px) {
+  .container-colabs {
+    padding: 30px !important;
+  }
+  .container-colabs video, .container-colabs img {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
 /*# sourceMappingURL=colaboraciones.css.map */
