@@ -7,11 +7,17 @@ pipeline {
             }
         }
         stage('Test') {
+            when {
+                branch 'master'
+            }
             steps {
                 echo 'Testing..'
             }
         }
         stage('Deploy') {
+            when {
+                branch 'check_branch'
+            }
             steps {
                 echo 'Deploying....'
             }
