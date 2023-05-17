@@ -1,0 +1,4 @@
+stages:
+  stage: test
+    pool: mycomputeragent
+    displayName: Test
