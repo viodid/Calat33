@@ -2,12 +2,15 @@ trigger:
   - master
 
 variables:
-  - name: AgentName
+  - name: PoolName
     value: 'mycomputeragent'
+    readonly: true
+  - name: AgentName
+    value: 'CentOS9'
     readonly: true
 
 pool: 
-  name: $(AgentName)
+  name: $(PoolName)
   demands:
     - agent.name -equals $(AgentName)
 
