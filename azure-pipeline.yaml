@@ -2,10 +2,9 @@ trigger:
   - master
 
 variables:
-  - group: 'my-variables-group' 
   - name: AgentName
     value: 'mycomputeragent'
-    readOnly: true
+    readonly: true
 
 pool: 
   name: $(AgentName)
