@@ -1,4 +1,35 @@
+trigger:
+  - master
+
+variables:
+  - group: 'my-variables-group' 
+  - name: AgentName
+    value: 'mycomputeragent'
+    readOnly: true
+
+pool: 
+  name: $(AgentName)
+  demands:
+    - agent.name -equals $(AgentName)
+
+
 stages:
-  stage: test
-    pool: mycomputeragent
-    displayName: Test
+  - stage: Test
+    jobs:
+      - job: Test
+        steps:
+        - script: echo "testing"
+  - stage: Deploy
+    jobs:
+      - job: Deploy
+        steps:
+        - script: echo "deploying"
+  - stage: Release
+    jobs:
+      - deployment: Release
+        environment: 'my-environment'
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+              - script: echo "releasing"
