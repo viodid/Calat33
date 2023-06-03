@@ -1,8 +1,5 @@
-import multiprocessing, netifaces                                                                                                                                                                                         
+import multiprocessing
 
-info = netifaces.ifaddresses('eth0')
-
-bind = info[2][0]['addr']
 
 workers = multiprocessing.cpu_count() * 2 + 1                                                                                                                                                                  
 

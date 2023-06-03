@@ -1,0 +1,7 @@
+services:
+  web:
+    build: docker/flask/
+    ports:
+      - "8888:8888"
+  nginx:
+    build: docker/nginx/
