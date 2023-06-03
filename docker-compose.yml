@@ -1,7 +1,18 @@
+version: "3.9"
+
 services:
-  web:
-    build: docker/flask/
-    ports:
-      - "8888:8888"
   nginx:
-    build: docker/nginx/
+    image: nginx:latest
+    ports:
+      - 80:80
+    volumes:
+      - ./docker/nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - web
+
+  web:
+    build:
+      context: ./docker/flask/
+      dockerfile: Dockerfile
+    ports:
+      - 8888:8888
