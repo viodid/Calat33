@@ -13,28 +13,24 @@ trigger:
 #  name: $(PoolName)
 #  demands:
 #    - agent.name -equals $(AgentName)
+pool:
+  vmImage: 'ubuntu-latest'
 
 
 stages:
   - stage: Test
     jobs:
       - job: Test
-        pool:
-          vmImage: 'ubuntu-latest'
         steps:
         - script: echo "testing"
   - stage: Deploy
     jobs:
       - job: Deploy
-        pool:
-          vmImage: 'ubuntu-latest'
         steps:
         - script: echo "deploying"
   - stage: Release
     jobs:
       - deployment: Release
-        pool:
-          vmImage: 'ubuntu-latest'
         environment: 'my-environment'
         strategy:
           runOnce:
