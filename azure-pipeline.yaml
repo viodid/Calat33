@@ -18,11 +18,17 @@ pool:
 
 
 stages:
-  - stage: Test
+  - stage: Build
     jobs:
-      - job: Test
+      - job: Build
+        displayName: Build and push Docker
         steps:
-        - script: echo "testing"
+          - task: Docker@2
+            inputs:
+              containerRegistry: 'viodid docker hub'
+              repository: 'calat33'
+              command: 'buildAndPush'
+              Dockerfile: '**/Dockerfile'
   - stage: Deploy
     jobs:
       - job: Deploy
