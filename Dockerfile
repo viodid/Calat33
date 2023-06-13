@@ -1,5 +1,9 @@
 FROM python:3.10-slim
 
+RUN useradd -m calat33 \
+    && mkdir /calat33 \
+    && chown calat33:calat33 /calat33
+
 WORKDIR /calat33
 
 COPY requirements.txt .
