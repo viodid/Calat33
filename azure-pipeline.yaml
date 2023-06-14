@@ -25,7 +25,7 @@ stages:
         steps:
           - task: Docker@2
             inputs:
-              containerRegistry: 'viodid docker hub'
+              containerRegistry: 'viodid-docker-hub'
               repository: 'calat33'
               command: 'buildAndPush'
               Dockerfile: '**/Dockerfile'
