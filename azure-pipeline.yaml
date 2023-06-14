@@ -37,7 +37,8 @@ stages:
             inputs:
               containerRegistry: 'viodid-docker-hub'
               repository: 'calat33'
-              command: 'push'
+              command: 'build'
+              Dockerfile: '**/Dockerfile'
               arguments: '--build-arg="config_file=$(configFile.secureFilePath)"'
               
           - task: Docker@2
