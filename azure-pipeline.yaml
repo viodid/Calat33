@@ -23,6 +23,16 @@ stages:
       - job: Build
         displayName: Build and push Docker
         steps:
+        
+          - task: DownloadSecureFile@1
+            name: configFile
+            inputs:
+              secureFile: 'config.json'
+              
+          - script: |
+              echo $(configFile.secureFilePath)
+              echo $(Agent.TempDirectory)
+
           - task: Docker@2
             inputs:
               containerRegistry: 'viodid-docker-hub'
