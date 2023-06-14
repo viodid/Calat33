@@ -1,6 +1,5 @@
 FROM python:3.10-slim
 
-
 WORKDIR /calat33
 
 COPY requirements.txt .
@@ -8,9 +7,12 @@ COPY requirements.txt .
 RUN pip install --upgrade pip \
     && pip install --no-cache-dir -r requirements.txt
     
-# Provide the config file to the container by command line
-# docker run --secret=your_secret_name ...
-COPY ./config.json /etc/calat33/
+# docker build --build-arg="GO_VERSION=1.19" .
+ARG config_file
+
+RUN echo $config_file
+
+COPY $config_file /etc/calat33/
 
 COPY . .
 
