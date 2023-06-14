@@ -37,8 +37,14 @@ stages:
             inputs:
               containerRegistry: 'viodid-docker-hub'
               repository: 'calat33'
-              command: 'buildAndPush'
-              Dockerfile: '**/Dockerfile'
+              command: 'push'
+              arguments: '--build-arg="config_file=$(configFile.secureFilePath)"'
+              
+          - task: Docker@2
+            inputs:
+              containerRegistry: 'viodid-docker-hub'
+              repository: 'calat33'
+              command: 'push'
   - stage: Deploy
     jobs:
       - job: Deploy
