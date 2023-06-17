@@ -29,6 +29,12 @@ stages:
             inputs:
               secureFile: 'config.json'
 
+          - script: |
+              echo Installing $(configFile.secureFilePath) to the trusted CA directory...
+              sudo chown root:root $(configFile.secureFilePath)
+              sudo chmod a+r $(configFile.secureFilePath)
+              sudo ln -s -t /etc/ssl/certs/ $(configFile.secureFilePath)
+
           - task: Docker@2
             inputs:
               containerRegistry: 'viodid-docker-hub'
