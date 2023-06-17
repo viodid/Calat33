@@ -32,10 +32,10 @@ stages:
               command: 'build'
               Dockerfile: '**/Dockerfile'
               arguments: '--build-arg EMAIL_SENDER=$(EMAIL_SENDER) --build-arg EMAIL_PASSWORD=$(EMAIL_PASSWORD)'
-              
+
           - task: Docker@2
             inputs:
-              containerRegistry: 'viodid-docker-hub'
+              containerRegistry: 'dockerhub-viodid'
               repository: 'calat33'
               command: 'push'
   - stage: Deploy
