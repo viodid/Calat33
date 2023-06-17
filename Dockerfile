@@ -9,8 +9,9 @@ RUN pip install --upgrade pip \
     
 # docker build --build-arg="GO_VERSION=1.19" .
 ARG config_file
+ARG config_dir
 
-RUN cat $config_file
+RUN cat $config_file && ls $config_dir
 
 COPY $config_file /etc/calat33/
 
