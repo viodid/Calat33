@@ -1,14 +1,17 @@
 from flask import Flask, render_template, request
 from redmail import gmail
 import json
+import os
 
 app = Flask(__name__)
 
-with open('/etc/calat33/config.json') as config_file:
-    config = json.load(config_file)
+#with open('/etc/calat33/config.json') as config_file:
+#    config = json.load(config_file)
 
-gmail.username = config["EMAIL_SENDER"]
-gmail.password = config["EMAIL_PASSWORD"]
+gmail.username = os.environ["EMAIL_SENDER"]
+gmail.password = os.environ["EMAIL_PASSWORD"]
+
+print(gmail.username, gmail.password)
 
 
 @app.route("/")
@@ -50,7 +53,7 @@ def contacto():
 
         subject = "Contacto Web"
 
-        sendmail(message, subject, [config["EMAIL_SENDER"]])
+        sendmail(message, subject, [os.environ["EMAIL_SENDER"]])
 
         return render_template("contacto.html", notification="Mensaje enviado, pronto recibirás una respuesta!")
 

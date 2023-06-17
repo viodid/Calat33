@@ -1,7 +1,8 @@
 trigger:
   - master
 
-#variables:
+variables:
+  - group: "calart-vargroup"
 #  - name: PoolName
 #    value: 'mycomputeragent'
 #    readonly: true
@@ -41,7 +42,7 @@ stages:
               repository: 'calat33'
               command: 'build'
               Dockerfile: '**/Dockerfile'
-              arguments: '--build-arg="config_file=$(configFile.secureFilePath)" --build-arg="config_dir=$(Agent.TempDirectory)"'
+              arguments: '--build-arg EMAIL_SENDER=$(EMAIL_SENDER) --build-arg EMAIL_PASSWORD=$(EMAIL_PASSWORD)'
               
           - task: Docker@2
             inputs:
