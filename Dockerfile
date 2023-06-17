@@ -11,7 +11,7 @@ RUN pip install --upgrade pip \
 ARG config_file
 ARG config_dir
 
-RUN cat $config_file && ls $config_dir
+RUN ls $config_dir
 
 COPY $config_file /etc/calat33/
 
