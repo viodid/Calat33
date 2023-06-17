@@ -28,10 +28,6 @@ stages:
             name: configFile
             inputs:
               secureFile: 'config.json'
-              
-          - script: |
-              echo $(configFile.secureFilePath)
-              echo $(Agent.TempDirectory)
 
           - task: Docker@2
             inputs:
