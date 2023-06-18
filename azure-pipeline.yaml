@@ -22,14 +22,15 @@ stages:
   - stage: Build
     jobs:
       - job: Build
-        displayName: Build and push Docker
         steps:
           - task: Docker@2
+            displayName: Docker login
             inputs:
               containerRegistry: 'dockerhub-viodid'
               command: 'login'
 
           - task: Docker@2
+            displayName: Docker build
             inputs:
               containerRegistry: 'dockerhub-viodid'
               repository: 'calat33'
@@ -38,6 +39,7 @@ stages:
               arguments: '--build-arg EMAIL_SENDER=$(EMAIL_SENDER) --build-arg EMAIL_PASSWORD=$(EMAIL_PASSWORD)'
 
           - task: Docker@2
+            displayName: Docker push
             inputs:
               containerRegistry: 'dockerhub-viodid'
               repository: 'calat33'
