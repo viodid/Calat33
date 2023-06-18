@@ -33,13 +33,15 @@ stages:
             displayName: Docker build
             inputs:
               containerRegistry: 'dockerhub-viodid'
-              repository: 'calat33'
+              repository: 'viodid/calat33'
               command: 'build'
               Dockerfile: '**/Dockerfile'
               tags: |
                 $(Build.BuildId)
                 latest
               arguments: '--build-arg EMAIL_SENDER=$(EMAIL_SENDER) --build-arg EMAIL_PASSWORD=$(EMAIL_PASSWORD)'
+
+          
 
           - task: Docker@2
             displayName: Docker push
