@@ -42,7 +42,7 @@ stages:
             displayName: Docker push
             inputs:
               containerRegistry: 'dockerhub-viodid'
-              repository: 'calat33'
+              repository: 'viodid/calat33'
               command: 'push'
   - stage: Deploy
     jobs:
