@@ -58,9 +58,9 @@ stages:
                 $(TAG)
                 latest
 
-  - stage: Build
+  - stage: Deploy
     jobs:
-      - job: Build
+      - job: Deploy
         steps:
           - task: SSH@0
             inputs:
