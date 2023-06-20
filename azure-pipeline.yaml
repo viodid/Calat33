@@ -44,8 +44,8 @@ stages:
               command: 'build'
               Dockerfile: '**/Dockerfile'
               tags: |
-                latest
                 $(TAG)
+                latest
               arguments: '--build-arg EMAIL_SENDER=$(EMAIL_SENDER) --build-arg EMAIL_PASSWORD=$(EMAIL_PASSWORD)'
 
           - task: Docker@2
@@ -55,8 +55,17 @@ stages:
               repository: 'viodid/calat33'
               command: 'push'
               tags: |
-                latest
                 $(TAG)
+                latest
 
-  
-          
+  - stage: Build
+    jobs:
+      - job: Build
+        steps:
+          - task: SSH@0
+            inputs:
+              sshEndpoint: 'calat33-ssh-service-conection'
+              runOptions: 'commands'
+              commands: 'docker pull viodid/calat33:latest'
+              readyTimeout: '20000'
+
