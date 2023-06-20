@@ -64,7 +64,7 @@ stages:
         steps:
           - task: SSH@0
             inputs:
-              sshEndpoint: 'calat33-ssh-service-conection'
+              sshEndpoint: 'ssh-service-connection'
               runOptions: 'commands'
               commands: 'docker pull viodid/calat33:latest'
               readyTimeout: '20000'
