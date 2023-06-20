@@ -46,6 +46,9 @@ stages:
               containerRegistry: 'dockerhub-viodid'
               repository: 'viodid/calat33'
               command: 'push'
+              tags: |
+                latest
+
   - stage: Deploy
     jobs:
       - job: Deploy
