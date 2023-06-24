@@ -3,12 +3,7 @@ trigger:
 
 variables:
   - group: "calart-vargroup"
-#  - name: PoolName
-#    value: 'mycomputeragent'
-#    readonly: true
-#  - name: AgentName
-#    value: 'CentOS9'
-#    readonly: true
+
 #
 #pool: 
 #  name: $(PoolName)
@@ -68,6 +63,9 @@ stages:
             inputs:
               sshEndpoint: 'ssh-service-connection'
               runOptions: 'commands'
-              commands: 'docker pull viodid/calat33:latest'
+              commands: |
+                docker rmi viodid/calat33:latest
+                docker pull viodid/calat33:latest
+                docker run -d -p 8888:8888 viodid/calat33:latest
               readyTimeout: '20000'
 
