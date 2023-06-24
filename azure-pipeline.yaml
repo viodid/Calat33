@@ -64,7 +64,7 @@ stages:
               sshEndpoint: 'ssh-service-connection'
               runOptions: 'commands'
               commands: |
-                if docker images --format "{{.Repository}}:{{.Tag}}" | grep -q viodid/calat33:latest; then docker rmi viodid/calat33:latest; fi
+                bash /home/azuredevops/rm_img_docker.sh viodid/calat33 latest
                 docker pull viodid/calat33:latest
                 docker run -d -p 8888:8888 viodid/calat33:latest
 
