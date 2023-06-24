@@ -64,8 +64,8 @@ stages:
               sshEndpoint: 'ssh-service-connection'
               runOptions: 'commands'
               commands: |
-                docker rmi viodid/calat33:latest
+                if docker images --format "{{.Repository}}:{{.Tag}}" | grep -q viodid/calat33:latest; \
+                then docker rmi viodid/calat33:latest; fi
                 docker pull viodid/calat33:latest
                 docker run -d -p 8888:8888 viodid/calat33:latest
-              readyTimeout: '20000'
 
