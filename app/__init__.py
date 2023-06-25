@@ -11,9 +11,6 @@ app = Flask(__name__)
 gmail.username = os.environ["EMAIL_SENDER"]
 gmail.password = os.environ["EMAIL_PASSWORD"]
 
-print(gmail.username, gmail.password)
-
-
 @app.route("/")
 def index():
     return render_template("index.html")
@@ -42,7 +39,6 @@ def contacto():
         message = request.form.get("message")
 
         if not message or not email:
-            print(message, email)
             return render_template("contacto.html", notification="""
             Faltan campos email o mensaje""")
 

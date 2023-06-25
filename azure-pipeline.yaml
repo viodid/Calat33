@@ -4,11 +4,6 @@ trigger:
 variables:
   - group: "calart-vargroup"
 
-#
-#pool: 
-#  name: $(PoolName)
-#  demands:
-#    - agent.name -equals $(AgentName)
 pool:
   vmImage: 'ubuntu-latest'
 
