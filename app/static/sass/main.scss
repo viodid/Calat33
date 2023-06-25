@@ -96,10 +96,10 @@ header {
         z-index: 2;
 
         div {
-            margin: 12px 100px;
+            margin: 18px 100px;
 
             img {
-                max-width: 160px;
+                max-width: 215px;
             }
 
             .anchor-logo {
@@ -171,6 +171,7 @@ footer {
 
         img {
             max-width: 302px;
+            margin-bottom: 15px;
         }
     }
 
@@ -219,7 +220,7 @@ footer {
     }
 
     nav .logo {
-        margin: 12px auto!important;
+        margin: 18px auto!important;
     }
 
     .open-sidebar {
