@@ -50,7 +50,7 @@ stages:
                 latest
 
   - stage: Deploy
-    displayName: Deploy to host via ssh
+    displayName: Deploy to VM via ssh
     jobs:
       - job: Deploy
         steps:
