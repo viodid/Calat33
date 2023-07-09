@@ -50,7 +50,7 @@ stages:
                 latest
 
   - stage: Deploy
-    displayName: Deploy to host via ssh
+    displayName: Deploy to VM via ssh
     jobs:
       - job: Deploy
         steps:
@@ -59,7 +59,7 @@ stages:
               sshEndpoint: 'ssh-service-connection'
               runOptions: 'commands'
               commands: |
-                bash /home/azuredevops/rm_img_docker.sh viodid/calat33 latest
+                bash /home/azuredevops/rm_img_docker.sh viodid/calat33 latest calart.org
                 docker pull viodid/calat33:latest
-                docker run -d -p 8888:8888 viodid/calat33:latest
+                docker run -d -p 8888:8888 --name calart.org viodid/calat33:latest
 
