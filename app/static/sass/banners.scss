@@ -94,14 +94,10 @@
                     letter-spacing: 1.4px;
                 }
 
-                a:hover {
-                    box-shadow: 0.5px 0.5px 6px black;
-                }
-
                 a:active {
                     background-color: #ccc;
                 }
-            }   
+            }
         }
 
         .sand-background {
@@ -138,15 +134,18 @@
 
     div {
         display: flex;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
         align-items: center;
         margin-bottom: 8px;
     }
 
     img {
-        width: 19.4%;
-        height: 233px;
+        width: 24.4%;
+        height: 300px;
         object-fit: fill;
+        margin: 5px auto;
+        box-shadow: 0.5px 0.5px 6px black;
     }
 
 }

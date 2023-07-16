@@ -1,0 +1,18 @@
+@import '__default.scss';
+
+.container-gallery {
+    padding: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: url(/static/media/images/lines_index.png);
+    background-size: auto;
+    background-repeat: repeat;
+}
+
+
+@media only screen and (max-width: 1182px) {
+    .container-gallery {
+        padding: 0!important;
+    }
+}

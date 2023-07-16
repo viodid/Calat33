@@ -88,12 +88,12 @@ header nav {
 
 footer {
   background-color: #FF6B22;
-  padding: 0px 100px;
+  padding: 0px 160px;
   color: #FFFEFE; }
   footer .first-footer {
     display: flex;
     justify-content: space-between;
-    padding: 80px 0px; }
+    padding: 80px 40px; }
     footer .first-footer .logo-footer {
       max-width: 302px; }
     footer .first-footer .footer-links {
@@ -165,8 +165,9 @@ footer {
     flex-wrap: wrap; }
     .photos-section div img {
       width: 45% !important;
-      margin: 5px auto !important;
-      height: 233px !important; }
+      margin: 5px 0 !important;
+      height: 175px !important;
+      box-shadow: 0.5px 0.5px 6px black; }
 
   footer {
     padding: 0 30px; }

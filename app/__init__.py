@@ -21,6 +21,11 @@ def route():
     return render_template("artista.html")
 
 
+@app.route("/galeria")
+def galeria():
+    return render_template("galeria.html")
+
+
 @app.route("/servicios")
 def servicios():
     return render_template("servicios.html")
@@ -63,7 +68,10 @@ def sendmail(message_client, subject, recipients):
             font-size:1.1rem; font">
                 <div style="display:flex; justify-content:center; align-items:
                 center; margin-bottom:2rem;">
+                    <!--
                     <img src="https://i.ibb.co/xmtSkh6/calat-email.png" style="max-width:300px">
+                    -->
+                    <img src="https://i.ibb.co/3TYTkDd/New-calart-solecito.png" style="max-width:300px">
                 </div>
                 <p>{message_client}</p>
                 <div>

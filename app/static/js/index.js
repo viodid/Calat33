@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', function() {
     let hamburger = false;
     open.addEventListener('click', () => {
         if (!hamburger) {
-            document.querySelector("#sidebar").style.height = "300px";
+            document.querySelector("#sidebar").style.height = "330px";
             document.querySelector("#sidebar").style.width = "100%";
             // document.querySelector("#sidebar").style.display = "flex";
             document.querySelector("main").style.marginTop = "376px";
@@ -36,10 +36,10 @@ window.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('scroll', (event) => {
         if (window.scrollY >= 42.4) {
             document.querySelector("nav").style.top = 0;
-            document.querySelector("#sidebar").style.top = "77px";
+            document.querySelector("#sidebar").style.top = "75px";
         } else {
             document.querySelector("nav").style.top = "40px";
-            document.querySelector("#sidebar").style.top = "116px";
+            document.querySelector("#sidebar").style.top = "100px";
         }
     })
 
