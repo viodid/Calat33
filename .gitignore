@@ -177,3 +177,6 @@ pyrightconfig.json
 config.json
 .sass-cache/
 __pycache__
+.sass-cache/
+.vscode/
+*css.map
