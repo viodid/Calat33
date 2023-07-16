@@ -84,6 +84,7 @@ header {
 
         }
     }
+
     nav {
         display: flex;
         justify-content: space-between;
@@ -130,13 +131,13 @@ header {
 
 footer {
     background-color: $orange;
-    padding: 0px 100px;
+    padding: 0px 160px;
     color: $first-white;
 
     .first-footer {
         display: flex;
         justify-content: space-between;
-        padding: 80px 0px;
+        padding: 80px 40px;
 
         .logo-footer {
             max-width: 302px;
@@ -244,8 +245,9 @@ footer {
 
         img {
             width: 45%!important;
-            margin: 5px auto!important;
-            height: 233px!important;
+            margin: 5px 0!important;
+            height: 175px!important;
+            box-shadow: 0.5px 0.5px 6px black;
         }
     }
 
@@ -267,14 +269,11 @@ footer {
                 justify-content: center;
             }
         }
-        
+
         .last-footer {
             font-size: 12px;
             margin-top: 30px;
         }
     }
-
-
-
 }
 
