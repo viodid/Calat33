@@ -1,7 +1,9 @@
-FROM python:3.10-slim
+FROM python:3.11-slim
 
 ENV EMAIL_SENDER ${EMAIL_SENDER}
 ENV EMAIL_PASSWORD ${EMAIL_PASSWORD}
+
+RUN env | grep EMAIL
 
 WORKDIR /calat33
 
