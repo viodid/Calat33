@@ -5,62 +5,47 @@
   justify-content: space-between;
   background-image: url(/static/media/images/lines_index.png);
   background-size: auto;
-  background-repeat: no-repeat;
-}
-.container-colabs .colabs-container {
-  margin-top: 30px;
-  max-width: 650px;
-}
-.container-colabs video, .container-colabs img {
-  width: 650px;
-  border: 2px solid black;
-  border-radius: 5px;
-  margin-bottom: 30px;
-}
-.container-colabs img {
-  height: 395px;
-}
-.container-colabs .large {
-  height: 750px;
-}
-.container-colabs h3 {
-  font-family: "Montserrat";
-  font-size: 25px;
-  margin-bottom: 15px;
-}
-.container-colabs .bi-facebook {
-  margin-left: 20px;
-}
-.container-colabs .links {
-  color: #00DDC2;
-  margin-bottom: 15px;
-  display: flex;
-  align-items: center;
-}
-.container-colabs .links a:hover {
-  color: #1E1E1E;
-}
-.container-colabs .links a:active {
-  color: #1E1E1E;
-}
-.container-colabs .links svg {
-  margin-right: 5px;
-}
+  background-repeat: no-repeat; }
+  .container-colabs .colabs-container {
+    margin-top: 30px;
+    max-width: 650px; }
+  .container-colabs video, .container-colabs img {
+    width: 650px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 30px; }
+  .container-colabs img {
+    height: 395px; }
+  .container-colabs .large {
+    height: 750px; }
+  .container-colabs h3 {
+    font-family: 'Montserrat';
+    font-size: 25px;
+    margin-bottom: 15px; }
+  .container-colabs .bi-facebook {
+    margin-left: 20px; }
+  .container-colabs .links {
+    color: #00DDC2;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center; }
+    .container-colabs .links a:hover {
+      color: #1E1E1E; }
+    .container-colabs .links a:active {
+      color: #1E1E1E; }
+    .container-colabs .links svg {
+      margin-right: 5px; }
 
 @media only screen and (max-width: 1182px) {
   .banner-layout .first {
-    font-size: 40px !important;
-  }
+    font-size: 40px !important; }
   .banner-layout .second {
-    font-size: 45px !important;
-  }
+    font-size: 45px !important; }
+
   .container-colabs {
-    padding: 30px !important;
-  }
-  .container-colabs video, .container-colabs img {
-    width: 100% !important;
-    height: auto !important;
-  }
-}
+    padding: 30px !important; }
+    .container-colabs video, .container-colabs img {
+      width: 100% !important;
+      height: auto !important; } }
 
 /*# sourceMappingURL=colaboraciones.css.map */

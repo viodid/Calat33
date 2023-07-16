@@ -111,9 +111,10 @@ footer {
         margin-bottom: 4px; }
         footer .first-footer .footer-links .contact-footer img {
           margin-right: 4px; }
+    footer .first-footer p {
+      margin-top: 15px; }
     footer .first-footer img {
-      max-width: 302px;
-      margin-bottom: 15px; }
+      max-width: 302px; }
   footer .last-footer {
     text-align: center;
     padding: 20px;
