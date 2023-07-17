@@ -33,7 +33,7 @@
       background-image: url(/static/media/images/zen_index.png);
       background-size: cover;
       background-repeat: no-repeat;
-      box-shadow: 0.5px 0.5px 6px black;
+      /* box-shadow: 0.5px 0.5px 6px black; */
       border-radius: 41px;
       display: flex;
       justify-content: space-around; }
@@ -69,7 +69,8 @@
           border-radius: 30px;
           font-size: 22px;
           font-weight: 700;
-          letter-spacing: 1.4px; }
+          letter-spacing: 1.4px;
+          box-shadow: 0.5px 0.5px 6px black; }
         .contact-banner .zen-container .image-wrapper .button-container a:active {
           background-color: #ccc; }
     .contact-banner .zen-container .sand-background {
