@@ -71,7 +71,7 @@ header nav {
   header nav div {
     margin: 18px 100px; }
     header nav div img {
-      max-width: 270px; }
+      max-width: 244px; }
     header nav div .anchor-logo {
       margin: 0px; }
     header nav div .anchor-logo:hover {
@@ -132,7 +132,7 @@ footer {
     width: 0;
     position: fixed;
     z-index: 2;
-    top: 116px;
+    top: 107px;
     left: 0;
     background-color: #FFFEFE;
     overflow-x: hidden;
@@ -149,7 +149,7 @@ footer {
       color: #FF6B22; }
 
   nav .logo {
-    margin: 18px auto !important; }
+    margin: 15px auto !important; }
 
   .open-sidebar {
     transition: .5s;

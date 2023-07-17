@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', function() {
             document.querySelector("#sidebar").style.height = "330px";
             document.querySelector("#sidebar").style.width = "100%";
             // document.querySelector("#sidebar").style.display = "flex";
-            document.querySelector("main").style.marginTop = "376px";
+            document.querySelector("main").style.marginTop = "400px";
             // box shadow
             document.querySelector("nav").style.boxShadow = "none";
             open.style.transform = "rotate(90deg)";

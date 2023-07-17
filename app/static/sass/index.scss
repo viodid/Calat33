@@ -103,12 +103,13 @@ main {
                         font-size: 22px;
                         font-weight: 700;
                         letter-spacing: 1.4px;
+                        box-shadow: 0.5px 0.5px 6px black;
                     }
 
                     a:active {
                         background-color: #ccc;
                     }
-                }   
+                }
             }
 
             .sand-background {
@@ -153,7 +154,7 @@ main {
             width: 24.4%;
             height: 300px;
             object-fit: fill;
-            /* box-shadow: 0.5px 0.5px 6px black; */
+            box-shadow: 0.5px 0.5px 6px black;
         }
 
     }

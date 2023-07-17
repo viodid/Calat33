@@ -100,7 +100,7 @@ header {
             margin: 18px 100px;
 
             img {
-                max-width: 270px;
+                max-width: 244px;
             }
 
             .anchor-logo {
@@ -202,7 +202,7 @@ footer {
         width: 0;
         position: fixed;
         z-index: 2;
-        top: 116px;
+        top: 107px;
         left: 0;
         background-color: $first-white;
         overflow-x: hidden;
@@ -224,7 +224,7 @@ footer {
     }
 
     nav .logo {
-        margin: 18px auto!important;
+        margin: 15px auto!important;
     }
 
     .open-sidebar {

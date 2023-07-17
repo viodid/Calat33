@@ -73,7 +73,8 @@ main .second-section {
           border-radius: 30px;
           font-size: 22px;
           font-weight: 700;
-          letter-spacing: 1.4px; }
+          letter-spacing: 1.4px;
+          box-shadow: 0.5px 0.5px 6px black; }
         main .second-section .zen-container .image-wrapper .button-container a:active {
           background-color: #ccc; }
     main .second-section .zen-container .sand-background {
@@ -105,7 +106,7 @@ main .photos-section {
     width: 24.4%;
     height: 300px;
     object-fit: fill;
-    /* box-shadow: 0.5px 0.5px 6px black; */ }
+    box-shadow: 0.5px 0.5px 6px black; }
 main .third-section {
   background-image: url(/static/media/images/lines_right_index.png);
   background-repeat: no-repeat;
