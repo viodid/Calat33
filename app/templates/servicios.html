@@ -4,6 +4,12 @@
 <link rel="stylesheet" href="static/css/servicios.css">
 <link rel="stylesheet" href="static/css/banners.css">
 {% endblock %}
+{% block script %}
+<!--
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="../static/js/servicios.js"></script>
+-->
+{% endblock %}
 {% block body %}
 <main>
     <section class="banner-layout">
@@ -20,39 +26,52 @@
                 <img src="/static/media/images/regalo.png" alt="Regalos">
                 <p>REGALOS</p>
                 <ul>
-                    <li><a href="">HOMENAJES</a></li>
-                    <li><a href="">ANIVERSARIOS</a></li>
-                    <li><a href="">BODAS</a></li>
+                    <li>
+                        <div class="cover">
+                            <div class="contents">
+                                <h1>Homenajes</h1>
+                                <p>Reconocemos públicamente a quienes, inspiran y mejoran la sociedad.</p>
+                                <span class="close">Close</span>
+                            </div>
+                        </div>
+                        <a class="pop-up">HOMENAJES</a>
+                    </li>
+                    <li><a>ANIVERSARIOS</a></li>
+                    <li><a>BODAS</a></li>
                 </ul>
             </div>
             <div class="container">
                 <img src="/static/media/images/publi.png" alt="Publicidad">
-                <p>PUBLIBIDAD</p>
+                <p>PUBLICIDAD</p>
                 <ul>
-                    <li><a href="">MARCAS</a></li>
-                    <li><a href="">SPOT</a></li>
-                    <li><a href="">CAMPAÑAS</a></li>
+                    <li><a>SPOTS</a></li>
+                    <li><a>ACCIONES COLABORATIVAS</a></li>
+                    <li><a>CAMPAÑAS DE CONCIENCIACIÓN</a></li>
                 </ul>
             </div>
             <div class="container">
                 <img src="/static/media/images/eventos.png" alt="Eventos">
                 <p>EVENTOS</p>
                 <ul>
-                    <li><a href="">TALLERES</a></li>
-                    <li><a href="">MARKETING EXPERIMENTAL</a></li>
-                    <li><a href="">ANIVERSARIOS DE EMPRESAS</a></li>
-                </ul>
-            </div>
-            <div class="container">
-                <img src="/static/media/images/equipo.png" alt="Equipo">
-                <p>TEAM BUILDER</p>
-                <ul>
-                    <li><a href="">COHESIÓN DE EQUIPO</a></li>
-                    <li><a href="">PROCESOS CREATIVOS</a></li>
-                    <li><a href="">DINÁMICA DE LOS CICLOS</a></li>
+                    <li><a>TALLERES</a></li>
+                    <li><a>CONGRESOS</a></li>
+                    <li><a>MARKETING EXPERIENCIAL</a></li>
                 </ul>
             </div>
         </div>
+    </section>
+    <section class="second-section">
+        <h1>Por cada producto, trabajo y taller realizados desde Calat33 destinamos un 4% a instituciones sociales y
+            medioambientales.</h1>
+        <p>
+            De esta manera queremos incidir activamente en el respaldo y promoción de proyectos sostenibles y con un
+            impacto medioambiental directo. <b>¿Quieres llevar a cabo un proyecto medioambiental?</b><br>¡Contáctanos y
+            mandanos tu proyecto!<br>Si lo puedes soñar, puede volverse realidad.
+        </p>
+        <p>
+            Al mismo tiempo las empresas privadas para las que realizamos trabajos pasan por un filtro muy estricto
+            sobre el los valores que poseen respecto al impacto sobre el medioambiente.
+        </p>
     </section>
     <section class="contact-banner">
         <div class="zen-container">

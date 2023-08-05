@@ -152,15 +152,17 @@ main .fourth-section {
       display: flex;
       flex-direction: column;
       align-items: center;
-      max-width: 350px;
+      max-width: 400px;
       height: 490px;
-      text-align: center;
-      justify-content: space-around; }
+      justify-content: center;
+      margin: 0 30px; }
       main .fourth-section .second div h1 {
         font-size: 180px; }
       main .fourth-section .second div h2 {
+        text-align: center;
         font-size: 40px;
-        font-weight: 700; }
+        font-weight: 700;
+        margin-bottom: 10px; }
       main .fourth-section .second div p {
         font-size: 22px; }
 main .fifth-section {
@@ -172,7 +174,8 @@ main .fifth-section {
     margin-top: 50px; }
     main .fifth-section div h1 {
       font-size: 60px;
-      font-weight: 700; }
+      font-weight: 700;
+      text-align: center; }
     main .fifth-section div p {
       font-size: 18px;
       font-weight: 500;

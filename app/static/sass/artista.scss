@@ -1,5 +1,9 @@
 @import '__default.scss';
 
+#padding-top {
+    padding-top: 60px;
+}
+
 .first-section {
     padding: 0 100px;
     background-image: url(/static/media/images/lines_index.png);
@@ -97,13 +101,17 @@
 }
 
 @media only screen and (max-width: 1182px) {
+    #padding-top {
+        padding-top: 0;
+    }
+
     .first-section {
         margin-top: 20px;
         padding: 0 20px;
         background-image: none;
 
         .first {
-            height: 150px;
+            height: 75px;
 
             img {
                 width: 50px;
@@ -133,7 +141,6 @@
                 h2 {
                     font-size: 20px;
                     line-height: 30px;
-                    margin-bottom: 20px;
                 }
 
                 p {
@@ -147,6 +154,10 @@
                     margin: 0px auto 20px auto!important;
                     height: auto!important;
                 }
+            }
+
+            .zoom {
+                margin-bottom: 0;
             }
         }
     }
