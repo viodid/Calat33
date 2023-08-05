@@ -47,6 +47,10 @@
                 margin-top: 10px;
             }
 
+            a {
+                cursor: pointer;
+            }
+
             a:hover {
                 color: $bluegreen;
             }
@@ -54,7 +58,69 @@
             a:active {
                 colohover: $bluegreen;
             }
+
+            h1 {
+                text-align: center
+            }
+
+            .cover {
+                background: rgba(0, 0, 0, 0);
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                display: none;
+            }
+
+            .contents {
+                width: 300px;
+                background: #f1f1f1;
+                margin: 30px auto;
+                border: 2px solid #ccc;
+                border-radius: 5px;
+                position: relative;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .close {
+                border: 2px solid #ccc;
+                border-radius: 5px;
+                padding: 5px 15px;
+                position: absolute;
+                bottom: 15px;
+                text-align: center;
+                left: 30%;
+                width: 100px;
+                cursor: pointer;
+            }
+
+            .close:active {
+                background-color: #a1a1a1;
+            }
         }
+    }
+}
+
+.second-section {
+    width: 80%;
+    margin: 100px 0;
+    padding: 80px 100px 80px 260px;
+    background-color: $orange;
+    text-align: center;
+    color: $first-white;
+
+    h1 {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 22px;
     }
 }
 

@@ -16,7 +16,7 @@
     <meta property="og:url" content="https://calart.org">
     <meta property="og:site_name" content="CALART">
     <meta property="og:type" content="website">
-    <title>Calat33 - {% block title %}{% endblock %}</title>
+    <title>Calart - {% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="static/css/main.css">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="static/media/favicon/apple-touch-icon.png">
@@ -33,6 +33,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@100;300;400;500;700&display=swap');
     </style>
     <script src="../static/js/index.js"></script>
+    {% block script %}{% endblock %}
 </head>
 
 <body>
@@ -41,7 +42,7 @@
             <ul class="contact-header" id="media">
                 <li>
                     <img src="https://icongr.am/material/phone.svg?size=23&color=ffffff">
-                    <span>+34 635 556 523</span>
+                    <span>(+34) 608 729 296</span>
                 </li>
                 <li>
                     <img src="https://icongr.am/material/email.svg?size=23&color=ffffff">
@@ -92,14 +93,14 @@
     <footer>
         <div class="first-footer">
             <div class="logo-footer">
-                <img src="/static/media/logos/new_calart_white_sol.png" alt="Calat33 logo">
+                <img src="/static/media/logos/new_calart_white_sol.png" alt="Calart logo">
                 <p>Especialistas en plasmar en imágenes,
                     las emociones que nuestros clientes quieren transmitir. 🌍</p>
             </div>
             <div class="footer-links">
                 <p><b>Menu</b></p>
                 <ul>
-                    <li><a href="/">Calat33</a></li>
+                    <li><a href="/">Inicio</a></li>
                     <li><a href="/artista">El artista</a></li>
                     <li><a href="/galeria">Galería</a></li>
                     <li><a href="/servicios">Servicios</a></li>
@@ -137,7 +138,7 @@
                     <p><b>Contacto</b></p>
                     <li class="contact-footer">
                         <img src="https://icongr.am/material/phone.svg?size=23&color=ffffff">
-                        <span>+34 635 556 523</span>
+                        <span>(+34) 608 729 296</span>
                     </li>
                     <li class="contact-footer">
                         <img src="https://icongr.am/material/email.svg?size=23&color=ffffff">
