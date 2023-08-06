@@ -165,7 +165,7 @@ main .fourth-section {
         margin-bottom: 10px; }
       main .fourth-section .second div p {
         font-size: 22px;
-        text-align: justify; }
+        text-align: center; }
 main .fifth-section {
   display: flex;
   flex-wrap: wrap;
