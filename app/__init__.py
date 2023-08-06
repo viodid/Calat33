@@ -54,7 +54,7 @@ def contacto():
 
         subject = "Contacto Web"
 
-        sendmail(message, subject, [os.environ["EMAIL_SENDER"]])
+        #sendmail(message, subject, [os.environ["EMAIL_SENDER"]])
 
         return render_template("contacto.html", notification="Mensaje enviado, pronto recibirás una respuesta!")
 

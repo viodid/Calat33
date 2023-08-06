@@ -164,7 +164,8 @@ main .fourth-section {
         font-weight: 700;
         margin-bottom: 10px; }
       main .fourth-section .second div p {
-        font-size: 22px; }
+        font-size: 22px;
+        text-align: justify; }
 main .fifth-section {
   display: flex;
   flex-wrap: wrap;
