@@ -4,8 +4,7 @@ trigger:
 variables:
   - group: "calart-vargroup"
 
-pool:
-  vmImage: 'CentOS9'
+pool: mycomputeragent
 
 
 stages:
