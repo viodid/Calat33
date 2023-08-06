@@ -5,7 +5,7 @@ variables:
   - group: "calart-vargroup"
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'mycomputeragent'
 
 
 stages:
