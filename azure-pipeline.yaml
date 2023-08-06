@@ -5,7 +5,7 @@ variables:
   - group: "calart-vargroup"
 
 pool:
-  vmImage: 'mycomputeragent'
+  vmImage: 'CentOS9'
 
 
 stages:
