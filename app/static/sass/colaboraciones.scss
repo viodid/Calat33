@@ -1,10 +1,10 @@
 @import '__default.scss';
 
 .container-colabs {
-    padding: 70px 100px;
+    padding: 70px 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-image: url(/static/media/images/lines_index.png);
     background-size: auto;
     background-repeat: no-repeat;
