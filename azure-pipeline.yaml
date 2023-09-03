@@ -59,6 +59,6 @@ stages:
               runOptions: 'commands'
               commands: |
                 bash /home/azuredevops/rm_img_docker.sh viodid/calat33 latest calart.org
-                docker pull viodid/calat33:latest
+                docker pull viodid/calat33:$(TAG)
                 docker run -d -p 8888:8888 --name calart.org viodid/calat33:latest
 
